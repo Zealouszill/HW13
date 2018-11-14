@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sharedvm="clr-namespace:SharedLogic.ViewModel;assembly=SharedLogic"
+             x:Class="OouiHW11.Page1">
+
+    <Grid>
+
+        <StackLayout>
+            <Label Text="Following Message:"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"/>
+
+            <Label Text="{Binding testStringFunction}" 
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </Grid>
+    
+        
+</ContentPage>

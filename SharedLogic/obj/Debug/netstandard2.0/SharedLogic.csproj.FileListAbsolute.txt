@@ -1,0 +1,8 @@
+C:\Users\Spencer\source\repos\HW11\SharedLogic\bin\Debug\netstandard2.0\SharedLogic.deps.json
+C:\Users\Spencer\source\repos\HW11\SharedLogic\bin\Debug\netstandard2.0\SharedLogic.dll
+C:\Users\Spencer\source\repos\HW11\SharedLogic\bin\Debug\netstandard2.0\SharedLogic.pdb
+C:\Users\Spencer\source\repos\HW11\SharedLogic\obj\Debug\netstandard2.0\SharedLogic.csproj.CoreCompileInputs.cache
+C:\Users\Spencer\source\repos\HW11\SharedLogic\obj\Debug\netstandard2.0\SharedLogic.AssemblyInfoInputs.cache
+C:\Users\Spencer\source\repos\HW11\SharedLogic\obj\Debug\netstandard2.0\SharedLogic.AssemblyInfo.cs
+C:\Users\Spencer\source\repos\HW11\SharedLogic\obj\Debug\netstandard2.0\SharedLogic.dll
+C:\Users\Spencer\source\repos\HW11\SharedLogic\obj\Debug\netstandard2.0\SharedLogic.pdb
