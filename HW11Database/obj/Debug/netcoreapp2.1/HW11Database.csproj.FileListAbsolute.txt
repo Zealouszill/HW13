@@ -1,0 +1,11 @@
+C:\Users\Spencer\source\repos\HW11\HW11Database\bin\Debug\netcoreapp2.1\HW11Database.deps.json
+C:\Users\Spencer\source\repos\HW11\HW11Database\bin\Debug\netcoreapp2.1\HW11Database.runtimeconfig.json
+C:\Users\Spencer\source\repos\HW11\HW11Database\bin\Debug\netcoreapp2.1\HW11Database.runtimeconfig.dev.json
+C:\Users\Spencer\source\repos\HW11\HW11Database\bin\Debug\netcoreapp2.1\HW11Database.dll
+C:\Users\Spencer\source\repos\HW11\HW11Database\obj\Debug\netcoreapp2.1\HW11Database.csprojAssemblyReference.cache
+C:\Users\Spencer\source\repos\HW11\HW11Database\obj\Debug\netcoreapp2.1\HW11Database.csproj.CoreCompileInputs.cache
+C:\Users\Spencer\source\repos\HW11\HW11Database\obj\Debug\netcoreapp2.1\HW11Database.AssemblyInfoInputs.cache
+C:\Users\Spencer\source\repos\HW11\HW11Database\obj\Debug\netcoreapp2.1\HW11Database.AssemblyInfo.cs
+C:\Users\Spencer\source\repos\HW11\HW11Database\bin\Debug\netcoreapp2.1\HW11Database.pdb
+C:\Users\Spencer\source\repos\HW11\HW11Database\obj\Debug\netcoreapp2.1\HW11Database.dll
+C:\Users\Spencer\source\repos\HW11\HW11Database\obj\Debug\netcoreapp2.1\HW11Database.pdb

@@ -9,7 +9,11 @@ namespace SharedLogic.ViewModel
     {
         public MainViewModel()
         {
+
             TestString = "This word";
+
+            
+
         }
 
         private String TestString;

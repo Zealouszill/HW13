@@ -25,6 +25,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "HW11Database/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/HW11Database.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HW11Database.dll": {}
+        }
       }
     }
   },
@@ -168,10 +178,16 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "HW11Database/1.0.0": {
+      "type": "project",
+      "path": "../HW11Database/HW11Database.csproj",
+      "msbuildProject": "../HW11Database/HW11Database.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "HW11Database >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -204,7 +220,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Database\\HW11Database.csproj": {
+              "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Database\\HW11Database.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -230,5 +250,16 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project HW11Database is not compatible with netstandard2.0 (.NETStandard,Version=v2.0). Project HW11Database supports: netcoreapp2.1 (.NETCoreApp,Version=v2.1)",
+      "libraryId": "HW11Database",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }

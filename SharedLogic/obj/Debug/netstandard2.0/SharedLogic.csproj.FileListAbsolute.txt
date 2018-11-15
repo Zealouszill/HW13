@@ -6,3 +6,4 @@ C:\Users\Spencer\source\repos\HW11\SharedLogic\obj\Debug\netstandard2.0\SharedLo
 C:\Users\Spencer\source\repos\HW11\SharedLogic\obj\Debug\netstandard2.0\SharedLogic.AssemblyInfo.cs
 C:\Users\Spencer\source\repos\HW11\SharedLogic\obj\Debug\netstandard2.0\SharedLogic.dll
 C:\Users\Spencer\source\repos\HW11\SharedLogic\obj\Debug\netstandard2.0\SharedLogic.pdb
+C:\Users\Spencer\source\repos\HW11\SharedLogic\obj\Debug\netstandard2.0\SharedLogic.csprojAssemblyReference.cache

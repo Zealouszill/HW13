@@ -1,0 +1,16 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sharedvm="clr-namespace:SharedLogic.ViewModel;assembly=SharedLogic"
+        Title="HW11.Avalonia">
+
+    <Window.DataContext>
+        <sharedvm:MainViewModel/>
+    </Window.DataContext>
+    
+    <DockPanel>
+        <StackPanel>
+            <TextBox Text="{Binding testStringFunction}"></TextBox>
+        </StackPanel>
+    </DockPanel>
+    
+</Window>
