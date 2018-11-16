@@ -26,24 +26,26 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "HW11Database/1.0.0": {
+      "HW11DatabaseTemp/1.0.0": {
         "type": "project",
         "framework": "Unsupported,Version=v0.0",
         "compile": {
-          "bin/placeholder/HW11Database.dll": {}
+          "bin/placeholder/HW11DatabaseTemp.dll": {}
         },
         "runtime": {
-          "bin/placeholder/HW11Database.dll": {}
+          "bin/placeholder/HW11DatabaseTemp.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "sha512": "bLpT1f/SFlO1CzqXG12KnJzpZs6lv24uX2Rzi4Fmm0noJpNlnWRVryuO3yK18Ca04t/YHcO1e1Z0WDfjseqNzw==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -53,10 +55,12 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "sha512": "R73gEjqCkI2Nw/IlN8QvcgPNklqQiPowp47JwvW0Bnp/RZnjN4UrJwEvWVJWRK1MsQ+HIfGe9i4aQlfK+ei9jA==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -179,15 +183,15 @@
         "netstandard.library.nuspec"
       ]
     },
-    "HW11Database/1.0.0": {
+    "HW11DatabaseTemp/1.0.0": {
       "type": "project",
-      "path": "../HW11Database/HW11Database.csproj",
-      "msbuildProject": "../HW11Database/HW11Database.csproj"
+      "path": "../HW11Database/HW11DatabaseTemp.csproj",
+      "msbuildProject": "../HW11Database/HW11DatabaseTemp.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "HW11Database >= 1.0.0",
+      "HW11DatabaseTemp >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -221,8 +225,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Database\\HW11Database.csproj": {
-              "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Database\\HW11Database.csproj"
+            "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Database\\HW11DatabaseTemp.csproj": {
+              "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Database\\HW11DatabaseTemp.csproj"
             }
           }
         }
@@ -255,8 +259,8 @@
     {
       "code": "NU1201",
       "level": "Error",
-      "message": "Project HW11Database is not compatible with netstandard2.0 (.NETStandard,Version=v2.0). Project HW11Database supports: netcoreapp2.1 (.NETCoreApp,Version=v2.1)",
-      "libraryId": "HW11Database",
+      "message": "Project HW11DatabaseTemp is not compatible with netstandard2.0 (.NETStandard,Version=v2.0). Project HW11DatabaseTemp supports: netcoreapp2.1 (.NETCoreApp,Version=v2.1)",
+      "libraryId": "HW11DatabaseTemp",
       "targetGraphs": [
         ".NETStandard,Version=v2.0"
       ]

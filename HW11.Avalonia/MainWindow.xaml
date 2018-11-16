@@ -3,14 +3,48 @@
         xmlns:sharedvm="clr-namespace:SharedLogic.ViewModel;assembly=SharedLogic"
         Title="HW11.Avalonia">
 
-    <Window.DataContext>
+    <Design.DataContext>
         <sharedvm:MainViewModel/>
-    </Window.DataContext>
-    
+    </Design.DataContext>
+
+    <StackPanel>
+        <TextBlock Text="First Name:" Margin="5,5,5,5"></TextBlock>
+        <TextBox Text="{Binding firstNameFunction}"></TextBox>
+
+        <TextBlock Text="Last Name:" Margin="5,5,5,5"></TextBlock>
+        <TextBox Text="{Binding lastNameFunction}"></TextBox>
+
+        <TextBlock Text="Age:" Margin="5,5,5,5"></TextBlock>
+        <TextBox Text="{Binding ageFunction}"></TextBox>
+
+        <TextBlock Text="Personality Rating:" Margin="5,5,5,5"></TextBlock>
+        <TextBox Text="{Binding personalityRatingFunction}"></TextBox>
+
+        <TextBlock Text="Does she enjoy sports?" Margin="5,5,5,5"></TextBlock>
+        <RadioButton IsChecked="{Binding enjoysSportsFunction}"></RadioButton>
+
+        <TextBlock Text="Additional Details:" Margin="5,5,5,5"></TextBlock>
+        <TextBox Text="{Binding additionalDetailsFunction}"></TextBox>
+
+        <Button Content="Add Potential" Command="{Binding AddPotentialCommand}" />
+
+    </StackPanel>
+
+
+    <!--
+            FirstName = firstName;
+            LastName = lastName;
+            AdditionalDetails = additionalDetails;
+            Age = age;
+            PersonalityRating = personalityRating;
+            EnjoysSports = enjoysSports;
+    -->
+
+    <!--
     <DockPanel>
         <StackPanel>
             <TextBox Text="{Binding testStringFunction}"></TextBox>
         </StackPanel>
     </DockPanel>
-    
+    -->
 </Window>

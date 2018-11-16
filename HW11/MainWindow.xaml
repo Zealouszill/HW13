@@ -13,8 +13,10 @@
     <Window.DataContext>
         <sharedvm:MainViewModel/>
     </Window.DataContext>
-
+<!--
     <Grid>
         <TextBox Text="{Binding testStringFunction}"></TextBox>
     </Grid>
+-->
+    
 </Window>

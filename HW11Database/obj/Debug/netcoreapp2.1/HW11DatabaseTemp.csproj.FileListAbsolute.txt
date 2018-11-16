@@ -1,0 +1,9 @@
+C:\Users\Spencer\source\repos\HW11\HW11Database\obj\Debug\netcoreapp2.1\HW11DatabaseTemp.csprojAssemblyReference.cache
+C:\Users\Spencer\source\repos\HW11\HW11Database\obj\Debug\netcoreapp2.1\HW11DatabaseTemp.csproj.CoreCompileInputs.cache
+C:\Users\Spencer\source\repos\HW11\HW11Database\obj\Debug\netcoreapp2.1\HW11DatabaseTemp.AssemblyInfoInputs.cache
+C:\Users\Spencer\source\repos\HW11\HW11Database\obj\Debug\netcoreapp2.1\HW11DatabaseTemp.AssemblyInfo.cs
+C:\Users\Spencer\source\repos\HW11\HW11Database\bin\Debug\netcoreapp2.1\HW11DatabaseTemp.deps.json
+C:\Users\Spencer\source\repos\HW11\HW11Database\bin\Debug\netcoreapp2.1\HW11DatabaseTemp.dll
+C:\Users\Spencer\source\repos\HW11\HW11Database\bin\Debug\netcoreapp2.1\HW11DatabaseTemp.pdb
+C:\Users\Spencer\source\repos\HW11\HW11Database\obj\Debug\netcoreapp2.1\HW11DatabaseTemp.dll
+C:\Users\Spencer\source\repos\HW11\HW11Database\obj\Debug\netcoreapp2.1\HW11DatabaseTemp.pdb

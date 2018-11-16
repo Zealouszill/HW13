@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 
 namespace SharedLogic.ViewModel
 {
-    public class MainViewModel
+    public class MainViewModel : INotifyPropertyChanged
     {
         public MainViewModel()
         {
@@ -16,6 +16,9 @@ namespace SharedLogic.ViewModel
 
         }
 
+        public IDataStorage DataStore => dataStore;
+
+        
         private String TestString;
         public String testStringFunction
         {
@@ -23,10 +26,73 @@ namespace SharedLogic.ViewModel
             set { SetField(ref TestString, value); }
         }
 
+        private string FirstName;
+        public string firstNameFunction
+        {
+            get { return FirstName; }
+            set { SetField(ref FirstName, value); }
+        }
 
+        private string LastName;
+        public string lastNameFunction
+        {
+            get { return LastName; }
+            set { SetField(ref LastName, value); }
+        }
 
+        private string AdditionalDetails;
+        public string additionalDetailsFunction
+        {
+            get { return AdditionalDetails; }
+            set { SetField(ref AdditionalDetails, value); }
+        }
 
+        private int Age;
+        public int ageFunction
+        {
+            get { return Age; }
+            set { SetField(ref Age, value); }
+        }
 
+        private int PersonalityRating;
+        public int personalityRatingFunction
+        {
+            get { return PersonalityRating; }
+            set { SetField(ref PersonalityRating, value); }
+        }
+
+        private bool EnjoysSports;
+        public bool enjoysSportsFunction
+        {
+            get { return EnjoysSports; }
+            set { SetField(ref EnjoysSports, value); }
+        }
+
+        //FirstName = firstName;
+        //LastName = lastName;
+        //AdditionalDetails = additionalDetails;
+        //Age = age;
+        //PersonalityRating = personalityRating;
+        //EnjoysSports = enjoysSports;
+
+        private Command addPotentialCommand;
+        public Command AddPotentialCommand => AddPotentialCommand ?? (addPotentialCommand = new Command(
+            () =>
+            {
+                DataStore.AddPotential(new Potential(
+                    firstNameFunction,
+                    lastNameFunction,
+                    additionalDetailsFunction,
+                    ageFunction,
+                    personalityRatingFunction,
+                    enjoysSportsFunction));
+                Potentials.Clear();
+                foreach (var c in DataStore.GetAllPotentials())
+                    Potentials.Add(c);
+                Title = null;
+            }));
+
+        public ObservableCollection<Potential> Potentials { get; private set; }
 
 
 

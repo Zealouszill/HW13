@@ -13,3 +13,5 @@ C:\Users\Spencer\source\repos\HW11\OouiHW11\bin\Debug\netcoreapp2.1\OouiHW11.pdb
 C:\Users\Spencer\source\repos\HW11\OouiHW11\bin\Debug\netcoreapp2.1\SharedLogic.dll
 C:\Users\Spencer\source\repos\HW11\OouiHW11\bin\Debug\netcoreapp2.1\SharedLogic.pdb
 C:\Users\Spencer\source\repos\HW11\OouiHW11\obj\Debug\netcoreapp2.1\OouiHW11.csproj.CopyComplete
+C:\Users\Spencer\source\repos\HW11\OouiHW11\bin\Debug\netcoreapp2.1\HW11DatabaseTemp.dll
+C:\Users\Spencer\source\repos\HW11\OouiHW11\bin\Debug\netcoreapp2.1\HW11DatabaseTemp.pdb
