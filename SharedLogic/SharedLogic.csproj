@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HW11Database\HW11DatabaseTemp.csproj" />
+    <ProjectReference Include="..\RealDatabase\HW11Database.csproj" />
   </ItemGroup>
 
 </Project>

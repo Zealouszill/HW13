@@ -1,26 +1,40 @@
-﻿using System;
+﻿using HW11Types;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows.Input;
+
 
 namespace SharedLogic.ViewModel
 {
     public class MainViewModel : INotifyPropertyChanged
     {
+
+        public ICommand addPotentialCommand;
+
+
         public MainViewModel()
         {
-
+            Console.WriteLine("This code executed");
             TestString = "This word";
 
-            
+            //addPotentialCommand = new RelayCommand();
 
         }
 
-        public IDataStorage DataStore => dataStore;
+        public MainViewModel(PotentialRepository potentialRepo)
+        {
+            this.potentialRepo = potentialRepo;
+        }
 
+        //public IDataStorage DataStore => dataStore;
+
+        private readonly PotentialRepository potentialRepo;
         
-        private String TestString;
-        public String testStringFunction
+        private string TestString;
+        public string testStringFunction
         {
             get { return TestString; }
             set { SetField(ref TestString, value); }
@@ -75,8 +89,8 @@ namespace SharedLogic.ViewModel
         //PersonalityRating = personalityRating;
         //EnjoysSports = enjoysSports;
 
-        private Command addPotentialCommand;
-        public Command AddPotentialCommand => AddPotentialCommand ?? (addPotentialCommand = new Command(
+        /*private ICommand addPotentialCommand;
+        public ICommand AddPotentialCommand => AddPotentialCommand ?? (addPotentialCommand = new ICommand(
             () =>
             {
                 DataStore.AddPotential(new Potential(
@@ -89,12 +103,15 @@ namespace SharedLogic.ViewModel
                 Potentials.Clear();
                 foreach (var c in DataStore.GetAllPotentials())
                     Potentials.Add(c);
-                Title = null;
-            }));
+                FirstName = null;
+            }));*/
+        
+        
 
-        public ObservableCollection<Potential> Potentials { get; private set; }
+        //public ICommand AddPotentialCommand => addPotentialCommand ?? (addPotentialCommand = new SimpleCommand(() => ChildControlViewModel = new AddCardViewModel(cardRepo)));
+        public ICommand AddPotentialCommand => addPotentialCommand ?? (addPotentialCommand = new SimpleCommand(() => ChildControlViewModel = new AddPotentialViewModel(potentialRepo)));
 
-
+        public object ChildControlViewModel { get; set; }
 
         #region INotifyPropertyChanged Implementation
         public event PropertyChangedEventHandler PropertyChanged;
@@ -112,5 +129,41 @@ namespace SharedLogic.ViewModel
             return true;
         }
         #endregion
+    }
+
+    public class RelayCommand : ICommand
+    {
+        public event EventHandler CanExecuteChanged
+        {
+            add { /*CommandManager.RequerySuggested += value;*/ }
+            remove { /*CommandManager.RequerySuggested -= value;*/ }
+        }
+        private Action methodToExecute;
+        private Func<bool> canExecuteEvaluator;
+        public RelayCommand(Action methodToExecute, Func<bool> canExecuteEvaluator)
+        {
+            this.methodToExecute = methodToExecute;
+            this.canExecuteEvaluator = canExecuteEvaluator;
+        }
+        public RelayCommand(Action methodToExecute)
+            : this(methodToExecute, null)
+        {
+        }
+        public bool CanExecute(object parameter)
+        {
+            if (this.canExecuteEvaluator == null)
+            {
+                return true;
+            }
+            else
+            {
+                bool result = this.canExecuteEvaluator.Invoke();
+                return result;
+            }
+        }
+        public void Execute(object parameter)
+        {
+            this.methodToExecute.Invoke();
+        }
     }
 }

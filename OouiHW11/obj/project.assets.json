@@ -1309,24 +1309,38 @@
           "build/netstandard1.0/Xamarin.Forms.targets": {}
         }
       },
-      "HW11DatabaseTemp/1.0.0": {
+      "HW11Database/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
+        "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Sqlite": "2.1.4"
+          "HW11Types": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "2.1.4",
+          "Microsoft.EntityFrameworkCore.Sqlite": "2.1.4",
+          "Microsoft.EntityFrameworkCore.Sqlite.Core": "2.1.4",
+          "System.ComponentModel.Annotations": "4.5.0"
         },
         "compile": {
-          "bin/placeholder/HW11DatabaseTemp.dll": {}
+          "bin/placeholder/HW11Database.dll": {}
         },
         "runtime": {
-          "bin/placeholder/HW11DatabaseTemp.dll": {}
+          "bin/placeholder/HW11Database.dll": {}
+        }
+      },
+      "HW11Types/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/HW11Types.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HW11Types.dll": {}
         }
       },
       "SharedLogic/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "HW11DatabaseTemp": "1.0.0"
+          "HW11Database": "1.0.0"
         },
         "compile": {
           "bin/placeholder/SharedLogic.dll": {}
@@ -4935,10 +4949,15 @@
         "xamarin.forms.nuspec"
       ]
     },
-    "HW11DatabaseTemp/1.0.0": {
+    "HW11Database/1.0.0": {
       "type": "project",
-      "path": "../HW11Database/HW11DatabaseTemp.csproj",
-      "msbuildProject": "../HW11Database/HW11DatabaseTemp.csproj"
+      "path": "../RealDatabase/HW11Database.csproj",
+      "msbuildProject": "../RealDatabase/HW11Database.csproj"
+    },
+    "HW11Types/1.0.0": {
+      "type": "project",
+      "path": "../HW11Types/HW11Types.csproj",
+      "msbuildProject": "../HW11Types/HW11Types.csproj"
     },
     "SharedLogic/1.0.0": {
       "type": "project",

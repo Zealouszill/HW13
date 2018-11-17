@@ -1,0 +1,4 @@
+C:\Users\Spencer\source\repos\HW11\NewSharedLogic\obj\Debug\netstandard2.0\NewSharedLogic.csprojAssemblyReference.cache
+C:\Users\Spencer\source\repos\HW11\NewSharedLogic\obj\Debug\netstandard2.0\NewSharedLogic.csproj.CoreCompileInputs.cache
+C:\Users\Spencer\source\repos\HW11\NewSharedLogic\obj\Debug\netstandard2.0\NewSharedLogic.AssemblyInfoInputs.cache
+C:\Users\Spencer\source\repos\HW11\NewSharedLogic\obj\Debug\netstandard2.0\NewSharedLogic.AssemblyInfo.cs
