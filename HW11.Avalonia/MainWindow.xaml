@@ -2,11 +2,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:sharedvm="clr-namespace:SharedLogic.ViewModel;assembly=SharedLogic"
         Title="HW11.Avalonia">
-
-    <Design.DataContext>
-        <sharedvm:MainViewModel/>
-    </Design.DataContext>
-
     <StackPanel>
         <TextBlock Text="First Name:" Margin="5,5,5,5"></TextBlock>
         <TextBox Text="{Binding firstNameFunction}"></TextBox>

@@ -27,6 +27,8 @@ namespace SharedLogic.ViewModel
         public MainViewModel(PotentialRepository potentialRepo)
         {
             this.potentialRepo = potentialRepo;
+
+           // var p = dataStore.GetById(2);
         }
 
         //public IDataStorage DataStore => dataStore;
@@ -89,27 +91,53 @@ namespace SharedLogic.ViewModel
         //PersonalityRating = personalityRating;
         //EnjoysSports = enjoysSports;
 
-        /*private ICommand addPotentialCommand;
-        public ICommand AddPotentialCommand => AddPotentialCommand ?? (addPotentialCommand = new ICommand(
+        //    public ICommand Add2
+        //{
+        //    get
+        //    {
+        //        if(addPotentialCommand == null)
+        //        {
+        //            addPotentialCommand = new SimpleCommand(add_CanExecute, add_Execute);
+        //        }
+        //        return addPotentialCommand;
+        //    }
+        //}
+        //private bool add_CanExecute()
+        //{
+        //    return true;
+        //}
+        //private void add_Execute()
+        //{
+        //    //do your stuff
+        //}
+
+        //private ICommand addPotentialCommand;
+        public ICommand AddPotentialCommand => addPotentialCommand ?? (addPotentialCommand = new SimpleCommand(
             () =>
             {
-                DataStore.AddPotential(new Potential(
+                return true;
+            },
+            () =>
+            {
+                Potential test = new Potential();
+
+                potentialRepo.AddPotential(new Potential(
                     firstNameFunction,
                     lastNameFunction,
                     additionalDetailsFunction,
                     ageFunction,
                     personalityRatingFunction,
                     enjoysSportsFunction));
-                Potentials.Clear();
-                foreach (var c in DataStore.GetAllPotentials())
-                    Potentials.Add(c);
+                //Potentials.Clear();
+                //foreach (var c in potentialRepo.GetAllPotentials())
+                //    Potentials.Add(c);
                 FirstName = null;
-            }));*/
-        
-        
+            }));
+
+
 
         //public ICommand AddPotentialCommand => addPotentialCommand ?? (addPotentialCommand = new SimpleCommand(() => ChildControlViewModel = new AddCardViewModel(cardRepo)));
-        public ICommand AddPotentialCommand => addPotentialCommand ?? (addPotentialCommand = new SimpleCommand(() => ChildControlViewModel = new AddPotentialViewModel(potentialRepo)));
+        //public ICommand AddPotentialCommand => addPotentialCommand ?? (addPotentialCommand = new SimpleCommand(() => ChildControlViewModel = new AddPotentialViewModel(potentialRepo)));
 
         public object ChildControlViewModel { get; set; }
 

@@ -16,6 +16,10 @@ namespace HW11Database
             context = new PotentialGirlfriendsContext();
         }
 
+        public SqliteDataStore()
+        {
+            context = new PotentialGirlfriendsContext();
+        }
 
         public void AddPotential(Potential p)
         {
@@ -26,6 +30,11 @@ namespace HW11Database
         public IEnumerable<Potential> GetAllPotentials()
         {
             return context.Potentials;
+        }
+
+        public Potential GetPotentialById(int id)
+        {
+            return context.Potentials.Find(id);
         }
     }
 

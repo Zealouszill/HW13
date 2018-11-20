@@ -1,6 +1,9 @@
 ﻿using System;
 using Avalonia;
 using Avalonia.Logging.Serilog;
+using HW11Database;
+using HW11Types;
+using SharedLogic.ViewModel;
 
 namespace HW11.Avalonia
 {
@@ -8,7 +11,9 @@ namespace HW11.Avalonia
     {
         static void Main(string[] args)
         {
-            BuildAvaloniaApp().Start<MainWindow>();
+            IDataStorage testStorage = new SqliteDataStore();
+            PotentialRepository testRepo = new PotentialRepository(testStorage);
+            BuildAvaloniaApp().Start<MainWindow>(() => new MainViewModel(testRepo));
         }
 
         public static AppBuilder BuildAvaloniaApp()

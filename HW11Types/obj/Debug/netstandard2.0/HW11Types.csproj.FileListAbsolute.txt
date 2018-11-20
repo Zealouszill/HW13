@@ -6,3 +6,4 @@ C:\Users\Spencer\source\repos\HW11\HW11Types\obj\Debug\netstandard2.0\HW11Types.
 C:\Users\Spencer\source\repos\HW11\HW11Types\obj\Debug\netstandard2.0\HW11Types.AssemblyInfo.cs
 C:\Users\Spencer\source\repos\HW11\HW11Types\obj\Debug\netstandard2.0\HW11Types.dll
 C:\Users\Spencer\source\repos\HW11\HW11Types\obj\Debug\netstandard2.0\HW11Types.pdb
+C:\Users\Spencer\source\repos\HW11\HW11Types\obj\Debug\netstandard2.0\HW11Types.csprojAssemblyReference.cache
