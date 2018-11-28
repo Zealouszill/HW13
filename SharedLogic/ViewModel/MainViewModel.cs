@@ -14,14 +14,13 @@ namespace SharedLogic.ViewModel
         public ICommand addPotentialCommand;
         public ICommand resultsCommand;
 
-        private readonly IDataStorage dataStorage;
+        //private readonly IDataStorage dataStorage;
 
         public MainViewModel()
         {
             Console.WriteLine("This code executed");
             TestString = "This word";
 
-            //addPotentialCommand = new RelayCommand();
 
         }
 
@@ -33,7 +32,7 @@ namespace SharedLogic.ViewModel
 
         }
 
-        public IDataStorage DataStore => dataStorage;
+        //public IDataStorage DataStore => dataStorage;
 
         private readonly PotentialRepository potentialRepo;
         
@@ -153,29 +152,13 @@ namespace SharedLogic.ViewModel
         public ICommand GetDBResults => resultsCommand ?? (resultsCommand = new SimpleCommand(
             () =>
             {
-                Console.WriteLine("This code was called CardRepository");
-
-                //DataStore.GetPotentialById(1);
-                //var p = DataStore.GetPotentialById(1);
-
-
-                Console.WriteLine("The ID Selection is: " + 1);
-
-                var temp1 = potentialRepo;
-                var temp2 = temp1.GetASpecificId(1);
-                var temp3 = temp2.FirstName;
-
-                Console.WriteLine("temp3 is " + temp3);
-
-                firstNameResultsFunction = temp3;
-
-                //firstNameResultsFunction = potentialRepo.GetASpecificId(IdSelection).FirstName;
+                firstNameResultsFunction = potentialRepo.GetASpecificId(IdSelection).FirstName;
             }));
 
         //public ICommand AddPotentialCommand => addPotentialCommand ?? (addPotentialCommand = new SimpleCommand(() => ChildControlViewModel = new AddCardViewModel(cardRepo)));
         //public ICommand AddPotentialCommand => addPotentialCommand ?? (addPotentialCommand = new SimpleCommand(() => ChildControlViewModel = new AddPotentialViewModel(potentialRepo)));
 
-        public object ChildControlViewModel { get; set; }
+        //public object ChildControlViewModel { get; set; }
 
         #region INotifyPropertyChanged Implementation
         public event PropertyChangedEventHandler PropertyChanged;
@@ -193,41 +176,5 @@ namespace SharedLogic.ViewModel
             return true;
         }
         #endregion
-    }
-
-    public class RelayCommand : ICommand
-    {
-        public event EventHandler CanExecuteChanged
-        {
-            add { /*CommandManager.RequerySuggested += value;*/ }
-            remove { /*CommandManager.RequerySuggested -= value;*/ }
-        }
-        private Action methodToExecute;
-        private Func<bool> canExecuteEvaluator;
-        public RelayCommand(Action methodToExecute, Func<bool> canExecuteEvaluator)
-        {
-            this.methodToExecute = methodToExecute;
-            this.canExecuteEvaluator = canExecuteEvaluator;
-        }
-        public RelayCommand(Action methodToExecute)
-            : this(methodToExecute, null)
-        {
-        }
-        public bool CanExecute(object parameter)
-        {
-            if (this.canExecuteEvaluator == null)
-            {
-                return true;
-            }
-            else
-            {
-                bool result = this.canExecuteEvaluator.Invoke();
-                return result;
-            }
-        }
-        public void Execute(object parameter)
-        {
-            this.methodToExecute.Invoke();
-        }
     }
 }
