@@ -63,6 +63,7 @@ namespace SharedLogic.ViewModel
         private ICommand addPotential;
         public ICommand AddPotential => addPotential ?? (addPotential = new SimpleCommand(() =>
         {
+            Console.WriteLine("This Was called in the AddPotentnailViewModel");
             if (repo.AddPotential(new Potential(FirstName, LastName, AdditionalDetails, Age, PersonalityRating, EnjoysSports)));
                 //IsClosed = true;
         }));

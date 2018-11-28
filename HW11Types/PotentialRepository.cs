@@ -14,6 +14,7 @@ namespace HW11Types
 
         public bool AddPotential(Potential p)
         {
+            Console.WriteLine("This Code executed in PotentialRepository.");
             try
             {
                 dataStore.AddPotential(p);
@@ -28,6 +29,12 @@ namespace HW11Types
         public IEnumerable<Potential> GetAllCards()
         {
             return dataStore.GetAllPotentials();
+        }
+
+        public Potential GetASpecificId(int index)
+        {
+            Console.WriteLine("This GetASpecificId executed in PotentialRepository.");
+            return dataStore.GetPotentialById(index);
         }
     }
 }

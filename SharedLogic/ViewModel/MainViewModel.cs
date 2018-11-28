@@ -1,7 +1,6 @@
 ﻿using HW11Types;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
@@ -13,6 +12,8 @@ namespace SharedLogic.ViewModel
     {
 
         public ICommand addPotentialCommand;
+        public ICommand resultsCommand;
+
 
 
         public MainViewModel()
@@ -28,7 +29,7 @@ namespace SharedLogic.ViewModel
         {
             this.potentialRepo = potentialRepo;
 
-           // var p = dataStore.GetById(2);
+            //var p = dataStore.GetById(2);
         }
 
         //public IDataStorage DataStore => dataStore;
@@ -84,6 +85,20 @@ namespace SharedLogic.ViewModel
             set { SetField(ref EnjoysSports, value); }
         }
 
+        private int IdSelection;
+        public int idSelectionFunction
+        {
+            get { return IdSelection; }
+            set { SetField(ref IdSelection, value); }
+        }
+
+        private string FirstNameResults;
+        public string firstNameResultsFunction
+        {
+            get { return FirstNameResults; }
+            set { SetField(ref FirstNameResults, value); }
+        }
+
         //FirstName = firstName;
         //LastName = lastName;
         //AdditionalDetails = additionalDetails;
@@ -119,7 +134,7 @@ namespace SharedLogic.ViewModel
             },
             () =>
             {
-                Potential test = new Potential();
+                //Potential test = new Potential();
 
                 potentialRepo.AddPotential(new Potential(
                     firstNameFunction,
@@ -134,7 +149,19 @@ namespace SharedLogic.ViewModel
                 FirstName = null;
             }));
 
+        public ICommand GetDBResults => resultsCommand ?? (resultsCommand = new SimpleCommand(
+            () =>
+            {
+                Console.WriteLine("The ID Selection is: " + IdSelection);
 
+                var temp1 = potentialRepo;
+                var temp2 = temp1.GetASpecificId(IdSelection);
+                var temp3 = temp2.FirstName;
+
+                firstNameResultsFunction = temp3;
+
+                //firstNameResultsFunction = potentialRepo.GetASpecificId(IdSelection).FirstName;
+            }));
 
         //public ICommand AddPotentialCommand => addPotentialCommand ?? (addPotentialCommand = new SimpleCommand(() => ChildControlViewModel = new AddCardViewModel(cardRepo)));
         //public ICommand AddPotentialCommand => addPotentialCommand ?? (addPotentialCommand = new SimpleCommand(() => ChildControlViewModel = new AddPotentialViewModel(potentialRepo)));

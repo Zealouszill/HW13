@@ -23,6 +23,8 @@ namespace HW11Database
 
         public void AddPotential(Potential p)
         {
+            Console.WriteLine("This Code executed in SqliteData.");
+            
             context.Potentials.Add(p);
             context.SaveChanges();
         }
@@ -34,7 +36,12 @@ namespace HW11Database
 
         public Potential GetPotentialById(int id)
         {
-            return context.Potentials.Find(id);
+            Console.WriteLine("This GetASpecificId executed in SqliteData.");
+            
+            long tempId = (long)id;
+
+            Console.WriteLine(context.Potentials.Find(tempId));
+            return context.Potentials.Find(tempId);
         }
     }
 
