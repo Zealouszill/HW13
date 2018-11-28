@@ -2,42 +2,65 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:sharedvm="clr-namespace:SharedLogic.ViewModel;assembly=SharedLogic"
         Title="HW11.Avalonia" SizeToContent="WidthAndHeight">
-    <Grid Width="600" Height="600" >
+    <Grid Width="600" Height="600">
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        
-        <StackPanel>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <StackPanel Grid.Column="0" Margin="10,10,10,10">
             <TextBlock Text="First Name:" Margin="5,5,5,5"></TextBlock>
-            <TextBox Text="{Binding firstNameFunction}"></TextBox>
 
             <TextBlock Text="Last Name:" Margin="5,5,5,5"></TextBlock>
-            <TextBox Text="{Binding lastNameFunction}"></TextBox>
 
             <TextBlock Text="Age:" Margin="5,5,5,5"></TextBlock>
-            <TextBox Text="{Binding ageFunction}"></TextBox>
 
             <TextBlock Text="Personality Rating:" Margin="5,5,5,5"></TextBlock>
-            <TextBox Text="{Binding personalityRatingFunction}"></TextBox>
 
             <TextBlock Text="Does she enjoy sports?" Margin="5,5,5,5"></TextBlock>
-            <RadioButton IsChecked="{Binding enjoysSportsFunction}"></RadioButton>
 
             <TextBlock Text="Additional Details:" Margin="5,5,5,5"></TextBlock>
-            <TextBox Text="{Binding additionalDetailsFunction}"></TextBox>
 
             <Button Content="Add Potential" IsEnabled="true" Command="{Binding AddPotentialCommand}"/>
 
+
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Margin="10,10,10,10">
+            <TextBox Text="{Binding firstNameFunction}"></TextBox>
+            <TextBox Text="{Binding lastNameFunction}"></TextBox>
+            <TextBox Text="{Binding ageFunction}"></TextBox>
+            <TextBox Text="{Binding personalityRatingFunction}"></TextBox>
+            <RadioButton Margin="0, 5, 0, 4"  IsChecked="{Binding enjoysSportsFunction}"></RadioButton>
+            <TextBox Text="{Binding additionalDetailsFunction}"></TextBox>
+
+
+
+        </StackPanel>
+
+        <StackPanel Grid.Column="0" Grid.Row="3" Margin="10,10,10,10" HorizontalAlignment="Left">
+
             <TextBlock Text="Database Selection:" Margin="50,5,5,5"></TextBlock>
-            <TextBox Text="{Binding idSelectionFunction}"></TextBox>
 
             <TextBlock Text="First Name Results:" Margin="50,5,5,5"></TextBlock>
-            <TextBlock Text="{Binding firstNameResultsFunction}"></TextBlock>
-
             <Button Content="Get Results" IsEnabled="true" Command="{Binding GetDBResults}"/>
+
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="3" Margin="10,10,10,10">
+            
+
+            <TextBox Text="{Binding idSelectionFunction}"></TextBox>
+            <TextBlock Text="{Binding firstNameResultsFunction}"></TextBlock>
 
         </StackPanel>
 
