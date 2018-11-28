@@ -14,7 +14,7 @@ namespace SharedLogic.ViewModel
         public ICommand addPotentialCommand;
         public ICommand resultsCommand;
 
-
+        private readonly IDataStorage dataStorage;
 
         public MainViewModel()
         {
@@ -30,9 +30,10 @@ namespace SharedLogic.ViewModel
             this.potentialRepo = potentialRepo;
 
             //var p = dataStore.GetById(2);
+
         }
 
-        //public IDataStorage DataStore => dataStore;
+        public IDataStorage DataStore => dataStorage;
 
         private readonly PotentialRepository potentialRepo;
         
@@ -152,11 +153,19 @@ namespace SharedLogic.ViewModel
         public ICommand GetDBResults => resultsCommand ?? (resultsCommand = new SimpleCommand(
             () =>
             {
-                Console.WriteLine("The ID Selection is: " + IdSelection);
+                Console.WriteLine("This code was called CardRepository");
+
+                //DataStore.GetPotentialById(1);
+                //var p = DataStore.GetPotentialById(1);
+
+
+                Console.WriteLine("The ID Selection is: " + 1);
 
                 var temp1 = potentialRepo;
-                var temp2 = temp1.GetASpecificId(IdSelection);
+                var temp2 = temp1.GetASpecificId(1);
                 var temp3 = temp2.FirstName;
+
+                Console.WriteLine("temp3 is " + temp3);
 
                 firstNameResultsFunction = temp3;
 

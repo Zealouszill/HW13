@@ -8,11 +8,11 @@ namespace HW11Database
     public class SqliteDataStore : IDataStorage
     {
         private readonly PotentialGirlfriendsContext context;
-        private readonly string dbPath;
+        //private readonly string dbPath;
 
         public SqliteDataStore(string dbPath)
         {
-            this.dbPath = dbPath ?? throw new ArgumentNullException(nameof(dbPath));
+            //this.dbPath = dbPath ?? throw new ArgumentNullException(nameof(dbPath));
             context = new PotentialGirlfriendsContext();
         }
 
@@ -22,9 +22,7 @@ namespace HW11Database
         }
 
         public void AddPotential(Potential p)
-        {
-            Console.WriteLine("This Code executed in SqliteData.");
-            
+        {            
             context.Potentials.Add(p);
             context.SaveChanges();
         }
@@ -36,12 +34,7 @@ namespace HW11Database
 
         public Potential GetPotentialById(int id)
         {
-            Console.WriteLine("This GetASpecificId executed in SqliteData.");
-            
-            long tempId = (long)id;
-
-            Console.WriteLine(context.Potentials.Find(tempId));
-            return context.Potentials.Find(tempId);
+            return context.Potentials.Find((long)id);
         }
     }
 
