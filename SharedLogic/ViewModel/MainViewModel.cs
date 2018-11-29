@@ -13,6 +13,7 @@ namespace SharedLogic.ViewModel
 
         public ICommand addPotentialCommand;
         public ICommand resultsCommand;
+        public ICommand removePotentialCommand;
 
         //private readonly IDataStorage dataStorage;
 
@@ -42,6 +43,8 @@ namespace SharedLogic.ViewModel
             get { return TestString; }
             set { SetField(ref TestString, value); }
         }
+
+        /* Display Database Values Code block*/
 
         private string FirstName;
         public string firstNameFunction
@@ -85,12 +88,25 @@ namespace SharedLogic.ViewModel
             set { SetField(ref EnjoysSports, value); }
         }
 
+        /* End Display Database Values Code Block 
+           Add and remove Functionality Code block */
+
         private int IdSelection;
         public int idSelectionFunction
         {
             get { return IdSelection; }
             set { SetField(ref IdSelection, value); }
         }
+
+        private int RemovePotentialID;
+        public int removePotentialIDFunction
+        {
+            get { return RemovePotentialID; }
+            set { SetField(ref RemovePotentialID, value); }
+        }
+
+        /* End Add and remove Functionality Code block
+           Show results Code block */
 
         private string FirstNameResults;
         public string firstNameResultsFunction
@@ -99,34 +115,44 @@ namespace SharedLogic.ViewModel
             set { SetField(ref FirstNameResults, value); }
         }
 
-        //FirstName = firstName;
-        //LastName = lastName;
-        //AdditionalDetails = additionalDetails;
-        //Age = age;
-        //PersonalityRating = personalityRating;
-        //EnjoysSports = enjoysSports;
+        private string LastNameResults;
+        public string lastNameResultsFunction
+        {
+            get { return LastNameResults; }
+            set { SetField(ref LastNameResults, value); }
+        }
 
-        //    public ICommand Add2
-        //{
-        //    get
-        //    {
-        //        if(addPotentialCommand == null)
-        //        {
-        //            addPotentialCommand = new SimpleCommand(add_CanExecute, add_Execute);
-        //        }
-        //        return addPotentialCommand;
-        //    }
-        //}
-        //private bool add_CanExecute()
-        //{
-        //    return true;
-        //}
-        //private void add_Execute()
-        //{
-        //    //do your stuff
-        //}
+        private string AdditionalDetailsResults;
+        public string additionalDetailsResultsFunction
+        {
+            get { return AdditionalDetailsResults; }
+            set { SetField(ref AdditionalDetailsResults, value); }
+        }
 
-        //private ICommand addPotentialCommand;
+        private int AgeResults;
+        public int ageResultsFunction
+        {
+            get { return AgeResults; }
+            set { SetField(ref AgeResults, value); }
+        }
+
+        private int PersonalityRatingResults;
+        public int personalityRatingResultsFunction
+        {
+            get { return PersonalityRatingResults; }
+            set { SetField(ref PersonalityRatingResults, value); }
+        }
+
+        private string EnjoysSportsResults;
+        public string enjoysSportsResultsFunction
+        {
+            get { return EnjoysSportsResults; }
+            set { SetField(ref EnjoysSportsResults, value); }
+        }
+
+        /* End  Show results Code block */
+
+
         public ICommand AddPotentialCommand => addPotentialCommand ?? (addPotentialCommand = new SimpleCommand(
             () =>
             {
@@ -152,7 +178,31 @@ namespace SharedLogic.ViewModel
         public ICommand GetDBResults => resultsCommand ?? (resultsCommand = new SimpleCommand(
             () =>
             {
-                firstNameResultsFunction = potentialRepo.GetASpecificId(IdSelection).FirstName;
+                Potential tempPotential = potentialRepo.GetASpecificId(IdSelection);
+                firstNameResultsFunction = tempPotential.FirstName;
+                lastNameResultsFunction = tempPotential.LastName;
+                additionalDetailsResultsFunction = tempPotential.AdditionalDetails;
+                ageResultsFunction = tempPotential.Age;
+                personalityRatingResultsFunction = tempPotential.PersonalityRating;
+
+                if (tempPotential.EnjoysSports)
+                    enjoysSportsResultsFunction = "Yes";
+                else
+                    enjoysSportsResultsFunction = "No";
+                //firstNameResultsFunction = potentialRepo.GetASpecificId(IdSelection).FirstName;
+
+                //FirstName = firstName;
+                //LastName = lastName;
+                //AdditionalDetails = additionalDetails;
+                //Age = age;
+                //PersonalityRating = personalityRating;
+                //EnjoysSports = enjoysSports;
+            }));
+
+        public ICommand RemovePotentialCommand => removePotentialCommand ?? (removePotentialCommand = new SimpleCommand(
+            () =>
+            {
+                potentialRepo.RemovePotentialById(RemovePotentialID);
             }));
 
         //public ICommand AddPotentialCommand => addPotentialCommand ?? (addPotentialCommand = new SimpleCommand(() => ChildControlViewModel = new AddCardViewModel(cardRepo)));

@@ -1,8 +1,10 @@
-<Window xmlns="https://github.com/avaloniaui"
+<Window
+    xmlns:controls="clr-namespace:Avalonia.Controls;assembly=Avalonia.Controls" xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:sharedvm="clr-namespace:SharedLogic.ViewModel;assembly=SharedLogic"
         Title="HW11.Avalonia" SizeToContent="WidthAndHeight">
-    <Grid Width="600" Height="600">
+    
+    <Grid Width="600" Height="750">
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"></ColumnDefinition>
@@ -19,20 +21,12 @@
 
         <StackPanel Grid.Column="0" Margin="10,10,10,10">
             <TextBlock Text="First Name:" Margin="5,5,5,5"></TextBlock>
-
             <TextBlock Text="Last Name:" Margin="5,5,5,5"></TextBlock>
-
             <TextBlock Text="Age:" Margin="5,5,5,5"></TextBlock>
-
             <TextBlock Text="Personality Rating:" Margin="5,5,5,5"></TextBlock>
-
             <TextBlock Text="Does she enjoy sports?" Margin="5,5,5,5"></TextBlock>
-
             <TextBlock Text="Additional Details:" Margin="5,5,5,5"></TextBlock>
-
             <Button Content="Add Potential" IsEnabled="true" Command="{Binding AddPotentialCommand}"/>
-
-
         </StackPanel>
 
         <StackPanel Grid.Column="1" Margin="10,10,10,10">
@@ -42,26 +36,33 @@
             <TextBox Text="{Binding personalityRatingFunction}"></TextBox>
             <RadioButton Margin="0, 5, 0, 4"  IsChecked="{Binding enjoysSportsFunction}"></RadioButton>
             <TextBox Text="{Binding additionalDetailsFunction}"></TextBox>
-
-
-
         </StackPanel>
 
-        <StackPanel Grid.Column="0" Grid.Row="3" Margin="10,10,10,10" HorizontalAlignment="Left">
-
-            <TextBlock Text="Database Selection:" Margin="50,5,5,5"></TextBlock>
-
-            <TextBlock Text="First Name Results:" Margin="50,5,5,5"></TextBlock>
+        <StackPanel Grid.Column="0" Grid.Row="3" Margin="10,10,10,10">
+            <TextBlock Text="Database Selection:" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="First Name:" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Last Name:" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Age:" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Personality Rating:" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Enjoy's Sports:" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Additional Details" Margin="5,5,5,5"></TextBlock>
             <Button Content="Get Results" IsEnabled="true" Command="{Binding GetDBResults}"/>
-
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="3" Margin="10,10,10,10">
-            
+            <TextBox Text="{Binding idSelectionFunction}" Margin="5,0,5,5"></TextBox>
+            <TextBlock Text="{Binding firstNameResultsFunction}" Margin="5,0,5,5"></TextBlock>
+            <TextBlock Text="{Binding lastNameResultsFunction}" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="{Binding ageResultsFunction}" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="{Binding personalityRatingResultsFunction}" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="{Binding enjoysSportsResultsFunction}" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="{Binding additionalDetailsResultsFunction}" Margin="5,5,5,5"></TextBlock>
+        </StackPanel>
 
-            <TextBox Text="{Binding idSelectionFunction}"></TextBox>
-            <TextBlock Text="{Binding firstNameResultsFunction}"></TextBlock>
-
+        <StackPanel Grid.Column="2" Grid.Row="2">
+            <TextBlock Text="Database ID" Margin="5,5,5,5"></TextBlock>
+            <TextBox Text="{Binding removePotentialIDFunction}"></TextBox>
+            <Button Content="Remove Potential" IsEnabled="true" Command="{Binding RemovePotentialCommand}"/>
         </StackPanel>
 
 

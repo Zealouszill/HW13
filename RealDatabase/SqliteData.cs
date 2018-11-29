@@ -1,7 +1,7 @@
 ﻿using HW11Types;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
+using System;
 
 namespace HW11Database
 {
@@ -35,6 +35,13 @@ namespace HW11Database
         public Potential GetPotentialById(int id)
         {
             return context.Potentials.Find((long)id);
+        }
+
+        public void RemovePotentialById(int id)
+        {
+            context.Potentials.Remove(context.Potentials.Find((long)id));
+            context.SaveChanges();
+
         }
     }
 
