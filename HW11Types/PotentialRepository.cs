@@ -35,9 +35,9 @@ namespace HW11Types
             return dataStore.GetPotentialById(index);
         }
 
-        public void RemovePotentialById(int id)
+        public string RemovePotentialById(int id)
         {
-            dataStore.RemovePotentialById(id);
+            return dataStore.RemovePotentialById(id);
         }
     }
 }

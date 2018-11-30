@@ -8,11 +8,6 @@ namespace HW11Xamarain
 {
     public class ViewModelLocator
     {
-        private readonly MainViewModel _viewModel = new MainViewModel();
-
-        public MainViewModel Main
-        {
-            get { return _viewModel; }
-        }
+        public MainViewModel Main { get; } = new MainViewModel();
     }
 }

@@ -7,6 +7,6 @@ namespace HW11Types
         void AddPotential(Potential p);
         IEnumerable<Potential> GetAllPotentials();
         Potential GetPotentialById(int id);
-        void RemovePotentialById(int id);
+        string RemovePotentialById(int id);
     }
 }

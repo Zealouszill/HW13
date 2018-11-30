@@ -202,7 +202,8 @@ namespace SharedLogic.ViewModel
         public ICommand RemovePotentialCommand => removePotentialCommand ?? (removePotentialCommand = new SimpleCommand(
             () =>
             {
-                potentialRepo.RemovePotentialById(RemovePotentialID);
+                var removalResult = potentialRepo.RemovePotentialById(RemovePotentialID);
+                Console.WriteLine("The removal Result is: " + removalResult);
             }));
 
         //public ICommand AddPotentialCommand => addPotentialCommand ?? (addPotentialCommand = new SimpleCommand(() => ChildControlViewModel = new AddCardViewModel(cardRepo)));
