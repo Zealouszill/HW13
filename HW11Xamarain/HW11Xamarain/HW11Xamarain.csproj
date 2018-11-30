@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\HW11Types\HW11Types.csproj" />
     <ProjectReference Include="..\..\SharedLogic\SharedLogic.csproj" />
   </ItemGroup>
 </Project>

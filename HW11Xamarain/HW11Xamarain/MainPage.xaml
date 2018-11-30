@@ -4,7 +4,14 @@
              xmlns:local="clr-namespace:HW11Xamarain"
              x:Class="HW11Xamarain.MainPage"
              xmlns:sharedvm="clr-namespace:SharedLogic.ViewModel;assembly=SharedLogic">
-<!--
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:ViewModelLocator xmlns:vm="clr-namespace:HW11Xamarin.ViewModelLocator" x:Key="Locator" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <!--
     <Window.DataContext>
         <sharedvm:MainViewModel />
     </Window.DataContext>
@@ -12,11 +19,11 @@
     
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
+        <Label  Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
 
-        <Label BindingContext="{Binding testStringFunction}" Text="{Binding testStringFunction}" 
+        <Label BindingContext="{Binding Main, Source={StaticResource Locator}}" Text="{Binding testStringFunction}" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
     </StackLayout>

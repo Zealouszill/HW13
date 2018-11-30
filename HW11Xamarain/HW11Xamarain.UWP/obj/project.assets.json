@@ -685,6 +685,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "HW11Types": "1.0.0",
           "SharedLogic": "1.0.0",
           "Xamarin.Forms": "3.3.0.967583"
         },
@@ -1557,6 +1558,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "HW11Types": "1.0.0",
           "SharedLogic": "1.0.0",
           "Xamarin.Forms": "3.3.0.967583"
         },
@@ -2430,6 +2432,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "HW11Types": "1.0.0",
           "SharedLogic": "1.0.0",
           "Xamarin.Forms": "3.3.0.967583"
         },
@@ -3124,6 +3127,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "HW11Types": "1.0.0",
           "SharedLogic": "1.0.0",
           "Xamarin.Forms": "3.3.0.967583"
         },
@@ -3996,6 +4000,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "HW11Types": "1.0.0",
           "SharedLogic": "1.0.0",
           "Xamarin.Forms": "3.3.0.967583"
         },
@@ -4869,6 +4874,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "HW11Types": "1.0.0",
           "SharedLogic": "1.0.0",
           "Xamarin.Forms": "3.3.0.967583"
         },
@@ -5741,6 +5747,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "HW11Types": "1.0.0",
           "SharedLogic": "1.0.0",
           "Xamarin.Forms": "3.3.0.967583"
         },
@@ -6614,6 +6621,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "HW11Types": "1.0.0",
           "SharedLogic": "1.0.0",
           "Xamarin.Forms": "3.3.0.967583"
         },
@@ -11079,6 +11087,7 @@
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.16299": [
+      "HW11Types >= 1.0.0",
       "HW11Xamarain >= 1.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.1.5",
       "SharedLogic >= 1.0.0",
@@ -11116,6 +11125,9 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
+            "C:\\Users\\Spencer\\source\\repos\\hw11\\HW11Types\\HW11Types.csproj": {
+              "projectPath": "C:\\Users\\Spencer\\source\\repos\\hw11\\HW11Types\\HW11Types.csproj"
+            },
             "C:\\Users\\Spencer\\source\\repos\\hw11\\HW11Xamarain\\HW11Xamarain\\HW11Xamarain.csproj": {
               "projectPath": "C:\\Users\\Spencer\\source\\repos\\hw11\\HW11Xamarain\\HW11Xamarain\\HW11Xamarain.csproj"
             },

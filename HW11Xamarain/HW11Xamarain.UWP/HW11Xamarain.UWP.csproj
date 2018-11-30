@@ -147,6 +147,10 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.5" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\HW11Types\HW11Types.csproj">
+      <Project>{906137e4-05c6-4434-bdfc-b0d5ea48cdca}</Project>
+      <Name>HW11Types</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\SharedLogic\SharedLogic.csproj">
       <Project>{dd39bf0d-ca7b-4d13-877f-9408a121093c}</Project>
       <Name>SharedLogic</Name>

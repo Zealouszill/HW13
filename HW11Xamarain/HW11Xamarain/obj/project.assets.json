@@ -994,11 +994,12 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "sha512": "R73gEjqCkI2Nw/IlN8QvcgPNklqQiPowp47JwvW0Bnp/RZnjN4UrJwEvWVJWRK1MsQ+HIfGe9i4aQlfK+ei9jA==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -2988,6 +2989,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "HW11Types >= 1.0.0",
       "NETStandard.Library >= 2.0.3",
       "SharedLogic >= 1.0.0",
       "Xamarin.Forms >= 3.3.0.967583"
@@ -3023,6 +3025,9 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
+            "C:\\Users\\Spencer\\source\\repos\\hw11\\HW11Types\\HW11Types.csproj": {
+              "projectPath": "C:\\Users\\Spencer\\source\\repos\\hw11\\HW11Types\\HW11Types.csproj"
+            },
             "C:\\Users\\Spencer\\source\\repos\\hw11\\SharedLogic\\SharedLogic.csproj": {
               "projectPath": "C:\\Users\\Spencer\\source\\repos\\hw11\\SharedLogic\\SharedLogic.csproj"
             }
