@@ -36,6 +36,8 @@ namespace HW11Tests
             var potentialRepo = new PotentialRepository(mockDataStorage.Object);
             potentialRepo.AddPotential(p);
 
+            //We are making a change here to see if continous integration works on azure.
+
             var rp = potentialRepo.GetASpecificId(1);
             //var firstName = rp.FirstName;
             //var thisResult = potentialRepo.RemovePotentialById((int)rp);
