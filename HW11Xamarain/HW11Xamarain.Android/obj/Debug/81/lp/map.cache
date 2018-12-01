@@ -1,3 +1,4 @@
+ExifLib
 FormsViewGroup
 HW11Xamarain
 Microsoft.Data.Sqlite
@@ -53,6 +54,13 @@ Xamarin.Forms.Core
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
+XLabs.Core
+XLabs.Forms
+XLabs.Forms.Droid
+XLabs.Ioc
+XLabs.Platform
+XLabs.Platform.Droid
+XLabs.Serialization
 netstandard
 HW11Types
 System.ComponentModel.Annotations
@@ -63,3 +71,4 @@ System.Reflection.Extensions
 System.Threading
 System.Resources.ResourceManager
 System.Threading.Tasks
+System.ComponentModel

@@ -487,6 +487,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "HW11Database": "1.0.0",
           "HW11Types": "1.0.0",
           "SharedLogic": "1.0.0",
           "Xamarin.Forms": "3.3.0.967583"
@@ -998,6 +999,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "HW11Database": "1.0.0",
           "HW11Types": "1.0.0",
           "SharedLogic": "1.0.0",
           "Xamarin.Forms": "3.3.0.967583"
@@ -1509,6 +1511,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "HW11Database": "1.0.0",
           "HW11Types": "1.0.0",
           "SharedLogic": "1.0.0",
           "Xamarin.Forms": "3.3.0.967583"
@@ -2020,6 +2023,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "HW11Database": "1.0.0",
           "HW11Types": "1.0.0",
           "SharedLogic": "1.0.0",
           "Xamarin.Forms": "3.3.0.967583"

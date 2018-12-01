@@ -14,6 +14,7 @@ namespace HW11.Avalonia
             IDataStorage testStorage = new SqliteDataStore();
             PotentialRepository testRepo = new PotentialRepository(testStorage);
             BuildAvaloniaApp().Start<MainWindow>(() => new MainViewModel(testRepo));
+
         }
 
         public static AppBuilder BuildAvaloniaApp()

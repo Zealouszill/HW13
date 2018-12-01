@@ -9,6 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "HW11Xamarain/1.0.0": {
         "dependencies": {
+          "HW11Database": "1.0.0",
           "HW11Types": "1.0.0",
           "NETStandard.Library": "2.0.3",
           "SharedLogic": "1.0.0",

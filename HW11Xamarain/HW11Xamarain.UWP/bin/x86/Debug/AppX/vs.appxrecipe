@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-11-30T18:53:14.714</Modified>
+      <Modified>2018-12-01T06:18:15.270</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.UWP\bin\x86\Debug\HW11Xamarain.UWP.exe">
       <PackagePath>entrypoint\HW11Xamarain.UWP.exe</PackagePath>
-      <Modified>2018-11-30T18:53:11.013</Modified>
+      <Modified>2018-12-01T06:18:14.096</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Spencer\.nuget\packages\microsoft.data.sqlite.core\2.1.0\lib\netstandard2.0\Microsoft.Data.Sqlite.dll">
       <PackagePath>Microsoft.Data.Sqlite.dll</PackagePath>
@@ -812,15 +812,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Spencer\source\repos\hw11\HW11Types\bin\Debug\netstandard2.0\HW11Types.dll">
       <PackagePath>HW11Types.dll</PackagePath>
-      <Modified>2018-11-28T22:18:59.190</Modified>
+      <Modified>2018-12-01T01:59:28.383</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\HW11Xamarain.dll">
       <PackagePath>HW11Xamarain.dll</PackagePath>
-      <Modified>2018-11-30T18:53:01.274</Modified>
+      <Modified>2018-12-01T06:18:08.302</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Spencer\source\repos\hw11\SharedLogic\bin\Debug\netstandard2.0\SharedLogic.dll">
       <PackagePath>SharedLogic.dll</PackagePath>
-      <Modified>2018-11-29T23:07:43.147</Modified>
+      <Modified>2018-12-01T06:18:07.329</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\HW11Database.dll">
+      <PackagePath>HW11Database.dll</PackagePath>
+      <Modified>2018-12-01T06:18:06.924</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -971,11 +975,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2018-11-30T18:53:10.770</Modified>
+      <Modified>2018-12-01T06:18:13.921</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2018-11-30T18:53:10.791</Modified>
+      <Modified>2018-12-01T06:18:13.922</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -987,11 +991,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2018-11-30T18:07:11.261</Modified>
+      <Modified>2018-12-01T02:05:07.977</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.UWP\bin\x86\Debug\Core\HW11Xamarain.UWP.exe">
       <PackagePath>HW11Xamarain.UWP.exe</PackagePath>
-      <Modified>2018-11-30T18:53:14.709</Modified>
+      <Modified>2018-12-01T06:18:15.264</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

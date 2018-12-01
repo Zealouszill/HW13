@@ -4,9 +4,9 @@ C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain\bin\Debug\netstanda
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\HW11Database.dll
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\HW11Types.dll
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\SharedLogic.dll
+C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\HW11Types.pdb
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\SharedLogic.pdb
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\HW11Database.pdb
-C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\HW11Types.pdb
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain\obj\Debug\netstandard2.0\HW11Xamarain.csprojAssemblyReference.cache
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain\obj\Debug\netstandard2.0\MainPage.xaml.g.cs

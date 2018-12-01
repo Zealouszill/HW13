@@ -1,4 +1,5 @@
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\HW11Xamarain.Android.dll
+C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\ExifLib.dll
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\FormsViewGroup.dll
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\HW11Xamarain.dll
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\Java.Interop.dll
@@ -19,6 +20,7 @@ C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\8
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\Microsoft.Extensions.Options.dll
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\Microsoft.Extensions.Primitives.dll
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\Mono.Android.dll
+C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\Mono.Android.Export.dll
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\mscorlib.dll
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\Remotion.Linq.dll
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\SharedLogic.dll
@@ -60,6 +62,13 @@ C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\8
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.Android.dll
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.dll
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.dll
+C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\XLabs.Core.dll
+C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\XLabs.Forms.dll
+C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\XLabs.Forms.Droid.dll
+C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\XLabs.Ioc.dll
+C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\XLabs.Platform.dll
+C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\XLabs.Platform.Droid.dll
+C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\XLabs.Serialization.dll
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\netstandard.dll
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\System.Data.dll
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\System.Numerics.dll
@@ -90,3 +99,10 @@ C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\8
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\System.Resources.ResourceManager.dll
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\System.Threading.Tasks.dll
 C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\System.Numerics.Vectors.dll
+C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\System.IO.dll
+C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\System.Text.Encoding.dll
+C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\System.Globalization.dll
+C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\System.ComponentModel.dll
+C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\System.Text.RegularExpressions.dll
+C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\System.Runtime.Serialization.Primitives.dll
+C:\Users\Spencer\source\repos\hw11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\android\assets\System.Runtime.Serialization.Xml.dll

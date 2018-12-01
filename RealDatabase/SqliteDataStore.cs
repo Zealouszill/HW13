@@ -22,7 +22,13 @@ namespace HW11Database
         }
 
         public void AddPotential(Potential p)
-        {            
+        {
+            Console.WriteLine(p.FirstName);
+            Console.WriteLine(p.LastName);
+            Console.WriteLine(p.Age);
+            Console.WriteLine(p.AdditionalDetails);
+            Console.WriteLine(p.EnjoysSports);
+            Console.WriteLine(p.PersonalityRating);
             context.Potentials.Add(p);
             context.SaveChanges();
         }
@@ -57,6 +63,7 @@ namespace HW11Database
 
         private static bool _created = false;
 
+
         public PotentialGirlfriendsContext()
         {
             if (!_created)
@@ -69,7 +76,7 @@ namespace HW11Database
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionbuilder)
         {
-            optionbuilder.UseSqlite(@"Data Source=Sample.db");
+            optionbuilder.UseSqlite($@"Data Source=Sample.db");
         }
 
         public DbSet<Potential> Potentials { get; set; }

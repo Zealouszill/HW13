@@ -1,6 +1,7 @@
 ﻿using HW11Types;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
@@ -15,6 +16,9 @@ namespace SharedLogic.ViewModel
         public ICommand resultsCommand;
         public ICommand removePotentialCommand;
 
+        public List<string> Items { get; }
+
+
         //private readonly IDataStorage dataStorage;
 
         public MainViewModel()
@@ -22,6 +26,11 @@ namespace SharedLogic.ViewModel
             Console.WriteLine("This code executed");
             TestString = "This word";
 
+            Items = new List<string>()
+            {
+                "Yes",
+                "No"
+            };
 
         }
 
@@ -29,6 +38,11 @@ namespace SharedLogic.ViewModel
         {
             this.potentialRepo = potentialRepo;
 
+            Items = new List<string>()
+            {
+                "Yes",
+                "No"
+            };            
             //var p = dataStore.GetById(2);
 
         }
@@ -42,6 +56,13 @@ namespace SharedLogic.ViewModel
         {
             get { return TestString; }
             set { SetField(ref TestString, value); }
+        }
+
+        private string TextEnjoysSports;
+        public string textEnjoysSportsFunction
+        {
+            get { return TextEnjoysSports; }
+            set { SetField(ref TextEnjoysSports, value); }
         }
 
         /* Display Database Values Code block*/
@@ -161,6 +182,11 @@ namespace SharedLogic.ViewModel
             () =>
             {
                 //Potential test = new Potential();
+
+                if (TextEnjoysSports == "Yes")
+                    enjoysSportsFunction = true;
+                else
+                    enjoysSportsFunction = false;
 
                 potentialRepo.AddPotential(new Potential(
                     firstNameFunction,
