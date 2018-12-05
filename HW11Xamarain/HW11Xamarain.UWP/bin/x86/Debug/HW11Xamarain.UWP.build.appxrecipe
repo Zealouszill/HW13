@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ec0cc741-fd3e-485c-81be-68815c480690</PackageIdentityName>
     <PackageIdentityPublisher>CN=80b0a289-3e49-40fc-847b-96902d72fdf4</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\bin\x86\Debug\HW11Xamarain.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\bin\x86\Debug\HW11Xamarain.UWP.exe">
       <PackagePath>entrypoint\HW11Xamarain.UWP.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Spencer\.nuget\packages\microsoft.data.sqlite.core\2.1.0\lib\netstandard2.0\Microsoft.Data.Sqlite.dll">
@@ -607,139 +607,139 @@
     <AppxPackagedFile Include="C:\Users\Spencer\.nuget\packages\xamarin.forms\3.3.0.967583\lib\uap10.0\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Types\bin\Debug\netstandard2.0\HW11Types.dll">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Types\bin\Debug\netstandard2.0\HW11Types.dll">
       <PackagePath>HW11Types.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\HW11Xamarain.dll">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\HW11Xamarain.dll">
       <PackagePath>HW11Xamarain.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\SharedLogic\bin\Debug\netstandard2.0\SharedLogic.dll">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\SharedLogic\bin\Debug\netstandard2.0\SharedLogic.dll">
       <PackagePath>SharedLogic.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\HW11Database.dll">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\HW11Database.dll">
       <PackagePath>HW11Database.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\bin\x86\Debug\HW11Xamarain.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\bin\x86\Debug\HW11Xamarain.UWP.xr.xml">
       <PackagePath>HW11Xamarain.UWP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
@@ -748,10 +748,10 @@
     <AppxPackagedFile Include="C:\Users\Spencer\.nuget\packages\xamarin.forms\3.3.0.967583\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW11%28Up to date%29\HW11Xamarain\HW11Xamarain.UWP\bin\x86\Debug\Core\HW11Xamarain.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.UWP\bin\x86\Debug\Core\HW11Xamarain.UWP.exe">
       <PackagePath>HW11Xamarain.UWP.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

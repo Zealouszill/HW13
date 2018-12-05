@@ -22,3 +22,15 @@ C:\Users\Spencer\source\repos\HW11(Up to date)\RealDatabase\obj\Debug\netstandar
 C:\Users\Spencer\source\repos\HW11(Up to date)\RealDatabase\obj\Debug\netstandard2.0\HW11Database.csproj.CopyComplete
 C:\Users\Spencer\source\repos\HW11(Up to date)\RealDatabase\obj\Debug\netstandard2.0\HW11Database.dll
 C:\Users\Spencer\source\repos\HW11(Up to date)\RealDatabase\obj\Debug\netstandard2.0\HW11Database.pdb
+C:\Users\Spencer\source\repos\HW13\RealDatabase\bin\Debug\netstandard2.0\HW11Database.deps.json
+C:\Users\Spencer\source\repos\HW13\RealDatabase\bin\Debug\netstandard2.0\HW11Database.dll
+C:\Users\Spencer\source\repos\HW13\RealDatabase\bin\Debug\netstandard2.0\HW11Database.pdb
+C:\Users\Spencer\source\repos\HW13\RealDatabase\bin\Debug\netstandard2.0\HW11Types.dll
+C:\Users\Spencer\source\repos\HW13\RealDatabase\bin\Debug\netstandard2.0\HW11Types.pdb
+C:\Users\Spencer\source\repos\HW13\RealDatabase\obj\Debug\netstandard2.0\HW11Database.csprojAssemblyReference.cache
+C:\Users\Spencer\source\repos\HW13\RealDatabase\obj\Debug\netstandard2.0\HW11Database.csproj.CoreCompileInputs.cache
+C:\Users\Spencer\source\repos\HW13\RealDatabase\obj\Debug\netstandard2.0\HW11Database.AssemblyInfoInputs.cache
+C:\Users\Spencer\source\repos\HW13\RealDatabase\obj\Debug\netstandard2.0\HW11Database.AssemblyInfo.cs
+C:\Users\Spencer\source\repos\HW13\RealDatabase\obj\Debug\netstandard2.0\HW11Database.csproj.CopyComplete
+C:\Users\Spencer\source\repos\HW13\RealDatabase\obj\Debug\netstandard2.0\HW11Database.dll
+C:\Users\Spencer\source\repos\HW13\RealDatabase\obj\Debug\netstandard2.0\HW11Database.pdb

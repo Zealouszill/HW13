@@ -2817,11 +2817,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\SharedLogic\\SharedLogic.csproj",
+      "projectUniqueName": "C:\\Users\\Spencer\\source\\repos\\HW13\\SharedLogic\\SharedLogic.csproj",
       "projectName": "SharedLogic",
-      "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\SharedLogic\\SharedLogic.csproj",
+      "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW13\\SharedLogic\\SharedLogic.csproj",
       "packagesPath": "C:\\Users\\Spencer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\SharedLogic\\obj\\",
+      "outputPath": "C:\\Users\\Spencer\\source\\repos\\HW13\\SharedLogic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -2840,8 +2840,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\RealDatabase\\HW11Database.csproj": {
-              "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\RealDatabase\\HW11Database.csproj"
+            "C:\\Users\\Spencer\\source\\repos\\HW13\\RealDatabase\\HW11Database.csproj": {
+              "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW13\\RealDatabase\\HW11Database.csproj"
             }
           }
         }
