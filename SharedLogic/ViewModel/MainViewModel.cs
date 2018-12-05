@@ -17,6 +17,7 @@ namespace SharedLogic.ViewModel
         public ICommand removePotentialCommand;
 
         public List<string> Items { get; }
+        public ObservableCollection<Potential> ListOfAllPotentials { get; }
 
 
         //private readonly IDataStorage dataStorage;
@@ -65,7 +66,7 @@ namespace SharedLogic.ViewModel
             set { SetField(ref TextEnjoysSports, value); }
         }
 
-        /* Display Database Values Code block*/
+        /* Display Database Values Code block: */
 
         private string FirstName;
         public string firstNameFunction
@@ -110,7 +111,7 @@ namespace SharedLogic.ViewModel
         }
 
         /* End Display Database Values Code Block 
-           Add and remove Functionality Code block */
+         * Add and remove Functionality Code block: */
 
         private int IdSelection;
         public int idSelectionFunction
@@ -127,7 +128,7 @@ namespace SharedLogic.ViewModel
         }
 
         /* End Add and remove Functionality Code block
-           Show results Code block */
+         * Show results Code block: */
 
         private string FirstNameResults;
         public string firstNameResultsFunction
@@ -171,8 +172,92 @@ namespace SharedLogic.ViewModel
             set { SetField(ref EnjoysSportsResults, value); }
         }
 
-        /* End  Show results Code block */
+        /* End  Show results Code block
+         * Start of Compatability input code for user: */
 
+        private string UserFirstName;
+        public string userFirstNameFunction
+        {
+            get { return UserFirstName; }
+            set { SetField(ref UserFirstName, value); }
+        }
+
+        private string UserLastName;
+        public string userLastNameFunction
+        {
+            get { return UserLastName; }
+            set { SetField(ref UserLastName, value); }
+        }
+
+        private int UserAge;
+        public int userAgeFunction
+        {
+            get { return UserAge; }
+            set { SetField(ref UserAge, value); }
+        }
+
+        private int UserEnjoysSportsRating;
+        public int userEnjoysSportsRatingFunction
+        {
+            get { return UserEnjoysSportsRating; }
+            set { SetField(ref UserEnjoysSportsRating, value); }
+        }
+
+        private string UserFrugalityRating;
+        public string userFrugalityRatingFunction
+        {
+            get { return UserFrugalityRating; }
+            set { SetField(ref UserFrugalityRating, value); }
+        }
+
+
+        private int UserPhysicallyActiveRating;
+        public int userPhysicallyActiveRatingFunction
+        {
+            get { return UserPhysicallyActiveRating; }
+            set { SetField(ref UserPhysicallyActiveRating, value); }
+        }
+
+        private int UserDesireForKidsRating;
+        public int userDesireForKidsRatingFunction
+        {
+            get { return UserDesireForKidsRating; }
+            set { SetField(ref UserDesireForKidsRating, value); }
+        }
+
+        private int UserSenseOfHumorRating;
+        public int userSenseOfHumorRatingFunction
+        {
+            get { return UserSenseOfHumorRating; }
+            set { SetField(ref UserSenseOfHumorRating, value); }
+        }
+
+        private int UserDrivenRating;
+        public int userDrivenRatingFunction
+        {
+            get { return UserDrivenRating; }
+            set { SetField(ref UserDrivenRating, value); }
+        }
+
+        private int UserAdditionalDetails;
+        public int userAdditionalDetailsFunction
+        {
+            get { return UserAdditionalDetails; }
+            set { SetField(ref UserAdditionalDetails, value); }
+        }
+
+        /*  
+            FirstName = firstName;
+            LastName = lastName;
+            Age = age;
+            EnjoysSportsRating = enjoysSportsRating;
+            FrugalityRating = frugalityRating;
+            PhysicallyActiveRating = physicallyActiveRating;
+            DesireForKidsRating = desireForKidsRating;
+            SenseOfHumorRating = senseOfHumorRating;
+            DrivenRating = drivenRating;
+            AdditionalDetails = additionalDetails;
+         */
 
         public ICommand AddPotentialCommand => addPotentialCommand ?? (addPotentialCommand = new SimpleCommand(
             () =>

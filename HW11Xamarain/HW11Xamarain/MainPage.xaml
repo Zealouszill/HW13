@@ -87,7 +87,9 @@
             <Button Text="Remove Potential" IsEnabled="true" Command="{Binding RemovePotentialCommand}"/>
         </StackLayout>
 
-        
+        <ListView>
+            
+        </ListView>
 
         <!--
         

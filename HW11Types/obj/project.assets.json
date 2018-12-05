@@ -45,12 +45,11 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "R73gEjqCkI2Nw/IlN8QvcgPNklqQiPowp47JwvW0Bnp/RZnjN4UrJwEvWVJWRK1MsQ+HIfGe9i4aQlfK+ei9jA==",
+      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -186,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Spencer\\source\\repos\\hw11\\HW11Types\\HW11Types.csproj",
+      "projectUniqueName": "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Types\\HW11Types.csproj",
       "projectName": "HW11Types",
-      "projectPath": "C:\\Users\\Spencer\\source\\repos\\hw11\\HW11Types\\HW11Types.csproj",
+      "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Types\\HW11Types.csproj",
       "packagesPath": "C:\\Users\\Spencer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Spencer\\source\\repos\\hw11\\HW11Types\\obj\\",
+      "outputPath": "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Types\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
