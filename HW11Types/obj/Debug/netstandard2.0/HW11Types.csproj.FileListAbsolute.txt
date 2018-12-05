@@ -7,3 +7,12 @@ C:\Users\Spencer\source\repos\HW11\HW11Types\obj\Debug\netstandard2.0\HW11Types.
 C:\Users\Spencer\source\repos\HW11\HW11Types\obj\Debug\netstandard2.0\HW11Types.AssemblyInfo.cs
 C:\Users\Spencer\source\repos\HW11\HW11Types\obj\Debug\netstandard2.0\HW11Types.dll
 C:\Users\Spencer\source\repos\HW11\HW11Types\obj\Debug\netstandard2.0\HW11Types.pdb
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Types\bin\Debug\netstandard2.0\HW11Types.deps.json
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Types\bin\Debug\netstandard2.0\HW11Types.dll
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Types\bin\Debug\netstandard2.0\HW11Types.pdb
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Types\obj\Debug\netstandard2.0\HW11Types.csprojAssemblyReference.cache
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Types\obj\Debug\netstandard2.0\HW11Types.csproj.CoreCompileInputs.cache
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Types\obj\Debug\netstandard2.0\HW11Types.AssemblyInfoInputs.cache
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Types\obj\Debug\netstandard2.0\HW11Types.AssemblyInfo.cs
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Types\obj\Debug\netstandard2.0\HW11Types.dll
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Types\obj\Debug\netstandard2.0\HW11Types.pdb

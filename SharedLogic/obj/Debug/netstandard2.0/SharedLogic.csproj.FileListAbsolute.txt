@@ -12,3 +12,17 @@ C:\Users\Spencer\source\repos\HW11\SharedLogic\obj\Debug\netstandard2.0\SharedLo
 C:\Users\Spencer\source\repos\HW11\SharedLogic\obj\Debug\netstandard2.0\SharedLogic.csproj.CopyComplete
 C:\Users\Spencer\source\repos\HW11\SharedLogic\obj\Debug\netstandard2.0\SharedLogic.dll
 C:\Users\Spencer\source\repos\HW11\SharedLogic\obj\Debug\netstandard2.0\SharedLogic.pdb
+C:\Users\Spencer\source\repos\HW11(Up to date)\SharedLogic\bin\Debug\netstandard2.0\SharedLogic.deps.json
+C:\Users\Spencer\source\repos\HW11(Up to date)\SharedLogic\bin\Debug\netstandard2.0\SharedLogic.dll
+C:\Users\Spencer\source\repos\HW11(Up to date)\SharedLogic\bin\Debug\netstandard2.0\SharedLogic.pdb
+C:\Users\Spencer\source\repos\HW11(Up to date)\SharedLogic\bin\Debug\netstandard2.0\HW11Database.dll
+C:\Users\Spencer\source\repos\HW11(Up to date)\SharedLogic\bin\Debug\netstandard2.0\HW11Types.dll
+C:\Users\Spencer\source\repos\HW11(Up to date)\SharedLogic\bin\Debug\netstandard2.0\HW11Database.pdb
+C:\Users\Spencer\source\repos\HW11(Up to date)\SharedLogic\bin\Debug\netstandard2.0\HW11Types.pdb
+C:\Users\Spencer\source\repos\HW11(Up to date)\SharedLogic\obj\Debug\netstandard2.0\SharedLogic.csprojAssemblyReference.cache
+C:\Users\Spencer\source\repos\HW11(Up to date)\SharedLogic\obj\Debug\netstandard2.0\SharedLogic.csproj.CoreCompileInputs.cache
+C:\Users\Spencer\source\repos\HW11(Up to date)\SharedLogic\obj\Debug\netstandard2.0\SharedLogic.AssemblyInfoInputs.cache
+C:\Users\Spencer\source\repos\HW11(Up to date)\SharedLogic\obj\Debug\netstandard2.0\SharedLogic.AssemblyInfo.cs
+C:\Users\Spencer\source\repos\HW11(Up to date)\SharedLogic\obj\Debug\netstandard2.0\SharedLogic.csproj.CopyComplete
+C:\Users\Spencer\source\repos\HW11(Up to date)\SharedLogic\obj\Debug\netstandard2.0\SharedLogic.dll
+C:\Users\Spencer\source\repos\HW11(Up to date)\SharedLogic\obj\Debug\netstandard2.0\SharedLogic.pdb

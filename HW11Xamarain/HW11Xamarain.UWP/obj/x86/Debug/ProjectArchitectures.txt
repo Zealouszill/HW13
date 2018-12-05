@@ -1,1 +1,1 @@
-C:\Users\Spencer\source\repos\HW11\HW11Xamarain\HW11Xamarain.UWP\HW11Xamarain.UWP.csproj;x86
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Xamarain\HW11Xamarain.UWP\HW11Xamarain.UWP.csproj;x86

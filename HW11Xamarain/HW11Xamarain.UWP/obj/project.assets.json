@@ -11109,11 +11109,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Xamarain\\HW11Xamarain.UWP\\HW11Xamarain.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\HW11Xamarain\\HW11Xamarain.UWP\\HW11Xamarain.UWP.csproj",
       "projectName": "HW11Xamarain.UWP",
-      "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Xamarain\\HW11Xamarain.UWP\\HW11Xamarain.UWP.csproj",
+      "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\HW11Xamarain\\HW11Xamarain.UWP\\HW11Xamarain.UWP.csproj",
       "packagesPath": "C:\\Users\\Spencer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Xamarain\\HW11Xamarain.UWP\\obj\\",
+      "outputPath": "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\HW11Xamarain\\HW11Xamarain.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -11133,14 +11133,14 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Types\\HW11Types.csproj": {
-              "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Types\\HW11Types.csproj"
+            "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\HW11Types\\HW11Types.csproj": {
+              "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\HW11Types\\HW11Types.csproj"
             },
-            "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Xamarain\\HW11Xamarain\\HW11Xamarain.csproj": {
-              "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Xamarain\\HW11Xamarain\\HW11Xamarain.csproj"
+            "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\HW11Xamarain\\HW11Xamarain\\HW11Xamarain.csproj": {
+              "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\HW11Xamarain\\HW11Xamarain\\HW11Xamarain.csproj"
             },
-            "C:\\Users\\Spencer\\source\\repos\\HW11\\SharedLogic\\SharedLogic.csproj": {
-              "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11\\SharedLogic\\SharedLogic.csproj"
+            "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\SharedLogic\\SharedLogic.csproj": {
+              "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\SharedLogic\\SharedLogic.csproj"
             }
           }
         }

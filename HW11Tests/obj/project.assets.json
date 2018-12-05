@@ -3276,11 +3276,12 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "sha512": "R73gEjqCkI2Nw/IlN8QvcgPNklqQiPowp47JwvW0Bnp/RZnjN4UrJwEvWVJWRK1MsQ+HIfGe9i4aQlfK+ei9jA==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -4056,11 +4057,12 @@
       ]
     },
     "System.ComponentModel/4.3.0": {
-      "sha512": "VyGn1jGRZVfxnh8EdvDCi71v3bMXrsu8aYJOwoV7SNDLVhiEqwP86pPMyRGsDsxhXAm2b3o9OIqeETfN5qfezw==",
+      "sha512": "e9Uaz/ejdr6AV3NsjsTRgoCiVL5VjbhgSZ5WcKlhZLAiDFVb5DLpqZXxukvqL7DazlFQXm6yX5WfGmdFoeQ6tg==",
       "type": "package",
       "path": "system.componentmodel/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5814,11 +5816,12 @@
       ]
     },
     "System.Runtime/4.3.0": {
-      "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
+      "sha512": "wLlTiM4b/Un90BM6s3voqYybZEGra4WiIaXfTeB9kVPZr6QDP97xjG+rZYzdP2jiuQnij1bA8q4PzmrY6l5QTw==",
       "type": "package",
       "path": "system.runtime/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -7182,11 +7185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Tests\\HW11Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\HW11Tests\\HW11Tests.csproj",
       "projectName": "HW11Tests",
-      "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Tests\\HW11Tests.csproj",
+      "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\HW11Tests\\HW11Tests.csproj",
       "packagesPath": "C:\\Users\\Spencer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Tests\\obj\\",
+      "outputPath": "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\HW11Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7205,14 +7208,14 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Types\\HW11Types.csproj": {
-              "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Types\\HW11Types.csproj"
+            "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\HW11Types\\HW11Types.csproj": {
+              "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\HW11Types\\HW11Types.csproj"
             },
-            "C:\\Users\\Spencer\\source\\repos\\HW11\\RealDatabase\\HW11Database.csproj": {
-              "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11\\RealDatabase\\HW11Database.csproj"
+            "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\RealDatabase\\HW11Database.csproj": {
+              "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\RealDatabase\\HW11Database.csproj"
             },
-            "C:\\Users\\Spencer\\source\\repos\\HW11\\SharedLogic\\SharedLogic.csproj": {
-              "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11\\SharedLogic\\SharedLogic.csproj"
+            "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\SharedLogic\\SharedLogic.csproj": {
+              "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\SharedLogic\\SharedLogic.csproj"
             }
           }
         }

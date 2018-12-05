@@ -2806,11 +2806,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Xamarain\\HW11Xamarain.iOS\\HW11Xamarain.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\HW11Xamarain\\HW11Xamarain.iOS\\HW11Xamarain.iOS.csproj",
       "projectName": "HW11Xamarain.iOS",
-      "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Xamarain\\HW11Xamarain.iOS\\HW11Xamarain.iOS.csproj",
+      "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\HW11Xamarain\\HW11Xamarain.iOS\\HW11Xamarain.iOS.csproj",
       "packagesPath": "C:\\Users\\Spencer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Xamarain\\HW11Xamarain.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\HW11Xamarain\\HW11Xamarain.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -2827,11 +2827,11 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Xamarain\\HW11Xamarain\\HW11Xamarain.csproj": {
-              "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11\\HW11Xamarain\\HW11Xamarain\\HW11Xamarain.csproj"
+            "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\HW11Xamarain\\HW11Xamarain\\HW11Xamarain.csproj": {
+              "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\HW11Xamarain\\HW11Xamarain\\HW11Xamarain.csproj"
             },
-            "C:\\Users\\Spencer\\source\\repos\\HW11\\SharedLogic\\SharedLogic.csproj": {
-              "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11\\SharedLogic\\SharedLogic.csproj"
+            "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\SharedLogic\\SharedLogic.csproj": {
+              "projectPath": "C:\\Users\\Spencer\\source\\repos\\HW11(Up to date)\\SharedLogic\\SharedLogic.csproj"
             }
           }
         }

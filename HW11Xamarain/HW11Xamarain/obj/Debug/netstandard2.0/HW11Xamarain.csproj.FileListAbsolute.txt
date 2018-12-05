@@ -17,3 +17,22 @@ C:\Users\Spencer\source\repos\HW11\HW11Xamarain\HW11Xamarain\obj\Debug\netstanda
 C:\Users\Spencer\source\repos\HW11\HW11Xamarain\HW11Xamarain\obj\Debug\netstandard2.0\HW11Xamarain.csproj.CopyComplete
 C:\Users\Spencer\source\repos\HW11\HW11Xamarain\HW11Xamarain\obj\Debug\netstandard2.0\HW11Xamarain.dll
 C:\Users\Spencer\source\repos\HW11\HW11Xamarain\HW11Xamarain\obj\Debug\netstandard2.0\HW11Xamarain.pdb
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\HW11Xamarain.deps.json
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\HW11Xamarain.dll
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\HW11Xamarain.pdb
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\HW11Database.dll
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\HW11Types.dll
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\SharedLogic.dll
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\HW11Types.pdb
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\HW11Database.pdb
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\SharedLogic.pdb
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Xamarain\HW11Xamarain\obj\Debug\netstandard2.0\HW11Xamarain.csprojAssemblyReference.cache
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Xamarain\HW11Xamarain\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Xamarain\HW11Xamarain\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Xamarain\HW11Xamarain\obj\Debug\netstandard2.0\HW11Xamarain.csproj.CoreCompileInputs.cache
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Xamarain\HW11Xamarain\obj\Debug\netstandard2.0\HW11Xamarain.AssemblyInfoInputs.cache
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Xamarain\HW11Xamarain\obj\Debug\netstandard2.0\HW11Xamarain.AssemblyInfo.cs
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Xamarain\HW11Xamarain\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Xamarain\HW11Xamarain\obj\Debug\netstandard2.0\HW11Xamarain.csproj.CopyComplete
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Xamarain\HW11Xamarain\obj\Debug\netstandard2.0\HW11Xamarain.dll
+C:\Users\Spencer\source\repos\HW11(Up to date)\HW11Xamarain\HW11Xamarain\obj\Debug\netstandard2.0\HW11Xamarain.pdb
