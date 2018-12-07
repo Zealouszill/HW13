@@ -4,9 +4,11 @@
         xmlns:sharedvm="clr-namespace:SharedLogic.ViewModel;assembly=SharedLogic"
         Title="HW11.Avalonia" SizeToContent="WidthAndHeight">
     
-    <Grid Width="600" Height="750">
+    <Grid Width="1300" Height="750">
 
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
             <ColumnDefinition Width="2*"></ColumnDefinition>
             <ColumnDefinition Width="2*"></ColumnDefinition>
             <ColumnDefinition Width="3*"></ColumnDefinition>
@@ -65,7 +67,7 @@
             <Button Content="Remove Potential" IsEnabled="true" Command="{Binding RemovePotentialCommand}"/>
         </StackPanel>
 
-        <ListBox Grid.Column="2" Grid.Row="0">
+        <ListBox Grid.Column="3" Grid.RowSpan="4">
             
         </ListBox>
 
@@ -74,9 +76,13 @@
     <!--
             FirstName = firstName;
             LastName = lastName;
-            AdditionalDetails = additionalDetails;
             Age = age;
-            PersonalityRating = personalityRating;
-            EnjoysSports = enjoysSports;
+            EnjoysSportsRating = enjoysSportsRating;
+            FrugalityRating = frugalityRating;
+            PhysicallyActiveRating = physicallyActiveRating;
+            DesireForKidsRating = desireForKidsRating;
+            SenseOfHumorRating = senseOfHumorRating;
+            DrivenRating = drivenRating;
+            AdditionalDetails = additionalDetails;
     -->
 </Window>
