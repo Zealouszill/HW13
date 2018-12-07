@@ -20,7 +20,7 @@
             <RowDefinition Height="1*"></RowDefinition>
         </Grid.RowDefinitions>
 
-
+        <!-- Top left corner -->
         <StackPanel Grid.Column="0" Margin="10,10,10,10">
             <TextBlock Text="First Name:" Margin="5,5,5,5"></TextBlock>
             <TextBlock Text="Last Name:" Margin="5,5,5,5"></TextBlock>
@@ -31,6 +31,7 @@
             <Button Content="Add Potential" IsEnabled="true" Command="{Binding AddPotentialCommand}"/>
         </StackPanel>
 
+        <!-- Top left corner -->
         <StackPanel Grid.Column="1" Margin="10,10,10,10">
             <TextBox Text="{Binding firstNameFunction}"></TextBox>
             <TextBox Text="{Binding lastNameFunction}"></TextBox>
@@ -40,6 +41,7 @@
             <TextBox Text="{Binding additionalDetailsFunction}"></TextBox>
         </StackPanel>
 
+        <!-- Bottom left corner -->
         <StackPanel Grid.Column="0" Grid.Row="3" Margin="10,10,10,10">
             <TextBlock Text="Database Selection:" Margin="5,5,5,5"></TextBlock>
             <TextBlock Text="First Name:" Margin="5,5,5,5"></TextBlock>
@@ -51,6 +53,7 @@
             <Button Content="Get Results" IsEnabled="true" Command="{Binding GetDBResults}"/>
         </StackPanel>
 
+        <!-- Bottom left corner -->
         <StackPanel Grid.Column="1" Grid.Row="3" Margin="10,10,10,10">
             <TextBox Text="{Binding idSelectionFunction}" Margin="5,0,5,5"></TextBox>
             <TextBlock Text="{Binding firstNameResultsFunction}" Margin="5,0,5,5"></TextBlock>
@@ -61,13 +64,19 @@
             <TextBlock Text="{Binding additionalDetailsResultsFunction}" Margin="5,5,5,5"></TextBlock>
         </StackPanel>
 
+        <!-- Bottom Middle section -->
         <StackPanel Grid.Column="2" Grid.Row="2">
             <TextBlock Text="Database ID" Margin="5,5,5,5"></TextBlock>
             <TextBox Text="{Binding removePotentialIDFunction}"></TextBox>
             <Button Content="Remove Potential" IsEnabled="true" Command="{Binding RemovePotentialCommand}"/>
         </StackPanel>
 
-        <ListBox Grid.Column="3" Grid.RowSpan="4">
+        <StackPanel>
+            
+        </StackPanel>
+        
+        <!-- Far right column -->
+        <ListBox Grid.Column="4" Grid.RowSpan="4">
             
         </ListBox>
 
