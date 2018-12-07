@@ -23,6 +23,7 @@ namespace HW11Database
 
         public void AddPotential(Potential p)
         {
+            Console.WriteLine(p.FirstName);
             context.Potentials.Add(p);
             context.SaveChanges();
         }
@@ -74,5 +75,7 @@ namespace HW11Database
         }
 
         public DbSet<Potential> Potentials { get; set; }
+        public DbSet<UserProfileStats> UserStats { get; set; }
+
     }
 }
