@@ -66,49 +66,90 @@ namespace SharedLogic.ViewModel
             set { SetField(ref TextEnjoysSports, value); }
         }
 
-        /* Display Database Values Code block: */
+        /* Display Database Input Values Code block: */
 
-        private string FirstName;
+        private string PotentialFirstName;
         public string firstNameFunction
         {
-            get { return FirstName; }
-            set { SetField(ref FirstName, value); }
+            get { return PotentialFirstName; }
+            set { SetField(ref PotentialFirstName, value); }
         }
 
-        private string LastName;
+        private string PotentialLastName;
         public string lastNameFunction
         {
-            get { return LastName; }
-            set { SetField(ref LastName, value); }
+            get { return PotentialLastName; }
+            set { SetField(ref PotentialLastName, value); }
         }
 
-        private string AdditionalDetails;
-        public string additionalDetailsFunction
-        {
-            get { return AdditionalDetails; }
-            set { SetField(ref AdditionalDetails, value); }
-        }
-
-        private int Age;
+        private int PotentialAge;
         public int ageFunction
         {
-            get { return Age; }
-            set { SetField(ref Age, value); }
+            get { return PotentialAge; }
+            set { SetField(ref PotentialAge, value); }
         }
 
-        private int PersonalityRating;
-        public int personalityRatingFunction
+        private int PotentialEnjoysSportsRating;
+        public int enjoysSportsRatingFunction
         {
-            get { return PersonalityRating; }
-            set { SetField(ref PersonalityRating, value); }
+            get { return PotentialEnjoysSportsRating; }
+            set { SetField(ref PotentialEnjoysSportsRating, value); }
         }
 
-        private bool EnjoysSports;
-        public bool enjoysSportsFunction
+        private int PotentialFrugalityRating;
+        public int frugalityRatingFunction
         {
-            get { return EnjoysSports; }
-            set { SetField(ref EnjoysSports, value); }
+            get { return PotentialFrugalityRating; }
+            set { SetField(ref PotentialFrugalityRating, value); }
         }
+
+        private int PotentialPhysicallyActiceRating;
+        public int physicallyActiveRatingFunction
+        {
+            get { return PotentialPhysicallyActiceRating; }
+            set { SetField(ref PotentialPhysicallyActiceRating, value); }
+        }
+
+        private int PotentialDesireForKidsRating;
+        public int desireForKidsRatingFunction
+        {
+            get { return PotentialDesireForKidsRating; }
+            set { SetField(ref PotentialDesireForKidsRating, value); }
+        }
+
+        private int PotentialSenseOfHumorRating;
+        public int senseOfHumorRatingFunction
+        {
+            get { return PotentialSenseOfHumorRating; }
+            set { SetField(ref PotentialSenseOfHumorRating, value); }
+        }
+
+        private int PotentialDrivenRating;
+        public int drivenRatingFunction
+        {
+            get { return PotentialDrivenRating; }
+            set { SetField(ref PotentialDrivenRating, value); }
+        }
+
+        private string PotentialAdditionalDetails;
+        public string additionalDetailsFunction
+        {
+            get { return PotentialAdditionalDetails; }
+            set { SetField(ref PotentialAdditionalDetails, value); }
+        }
+
+        /*  
+            FirstName = firstName;
+            LastName = lastName;
+            Age = age;
+            EnjoysSportsRating = enjoysSportsRating;
+            FrugalityRating = frugalityRating;
+            PhysicallyActiveRating = physicallyActiveRating;
+            DesireForKidsRating = desireForKidsRating;
+            SenseOfHumorRating = senseOfHumorRating;
+            DrivenRating = drivenRating;
+            AdditionalDetails = additionalDetails;
+         */
 
         /* End Display Database Values Code Block 
          * Add and remove Functionality Code block: */
@@ -144,13 +185,6 @@ namespace SharedLogic.ViewModel
             set { SetField(ref LastNameResults, value); }
         }
 
-        private string AdditionalDetailsResults;
-        public string additionalDetailsResultsFunction
-        {
-            get { return AdditionalDetailsResults; }
-            set { SetField(ref AdditionalDetailsResults, value); }
-        }
-
         private int AgeResults;
         public int ageResultsFunction
         {
@@ -158,18 +192,53 @@ namespace SharedLogic.ViewModel
             set { SetField(ref AgeResults, value); }
         }
 
-        private int PersonalityRatingResults;
-        public int personalityRatingResultsFunction
+        private int EnjoysSportsRatingResults;
+        public int enjoysSportsRatingResultsFunction
         {
-            get { return PersonalityRatingResults; }
-            set { SetField(ref PersonalityRatingResults, value); }
+            get { return EnjoysSportsRatingResults; }
+            set { SetField(ref EnjoysSportsRatingResults, value); }
         }
 
-        private string EnjoysSportsResults;
-        public string enjoysSportsResultsFunction
+        private int FrugalityRatingResults;
+        public int frugalityResultsFunction
         {
-            get { return EnjoysSportsResults; }
-            set { SetField(ref EnjoysSportsResults, value); }
+            get { return FrugalityRatingResults; }
+            set { SetField(ref FrugalityRatingResults, value); }
+        }
+
+        private int PhysicallyActiceRatingResults;
+        public int physicallyActiveResultsFunction
+        {
+            get { return PhysicallyActiceRatingResults; }
+            set { SetField(ref PhysicallyActiceRatingResults, value); }
+        }
+
+        private int DesireForKidsRatingResults;
+        public int desireForKidsRatingResultsFunction
+        {
+            get { return DesireForKidsRatingResults; }
+            set { SetField(ref DesireForKidsRatingResults, value); }
+        }
+
+        private int PotentialSenseOfHumorRatingResults;
+        public int senseOfHumorRatingResultsFunction
+        {
+            get { return PotentialSenseOfHumorRatingResults; }
+            set { SetField(ref PotentialSenseOfHumorRatingResults, value); }
+        }
+
+        private int DrivenRatingResults;
+        public int drivenRatingResultsFunction
+        {
+            get { return DrivenRatingResults; }
+            set { SetField(ref DrivenRatingResults, value); }
+        }
+
+        private string AdditionalDetailsResults;
+        public string additionalDetailsResultsFunction
+        {
+            get { return AdditionalDetailsResults; }
+            set { SetField(ref AdditionalDetailsResults, value); }
         }
 
         /* End  Show results Code block
@@ -203,8 +272,8 @@ namespace SharedLogic.ViewModel
             set { SetField(ref UserEnjoysSportsRating, value); }
         }
 
-        private string UserFrugalityRating;
-        public string userFrugalityRatingFunction
+        private int UserFrugalityRating;
+        public int userFrugalityRatingFunction
         {
             get { return UserFrugalityRating; }
             set { SetField(ref UserFrugalityRating, value); }
@@ -239,8 +308,8 @@ namespace SharedLogic.ViewModel
             set { SetField(ref UserDrivenRating, value); }
         }
 
-        private int UserAdditionalDetails;
-        public int userAdditionalDetailsFunction
+        private string UserAdditionalDetails;
+        public string userAdditionalDetailsFunction
         {
             get { return UserAdditionalDetails; }
             set { SetField(ref UserAdditionalDetails, value); }
@@ -268,38 +337,52 @@ namespace SharedLogic.ViewModel
             {
                 //Potential test = new Potential();
 
-                if (TextEnjoysSports == "Yes")
-                    enjoysSportsFunction = true;
-                else
-                    enjoysSportsFunction = false;
-
                 potentialRepo.AddPotential(new Potential(
                     firstNameFunction,
                     lastNameFunction,
-                    additionalDetailsFunction,
                     ageFunction,
-                    personalityRatingFunction,
-                    enjoysSportsFunction));
+                    enjoysSportsRatingFunction,
+                    frugalityRatingFunction,
+                    physicallyActiveRatingFunction,
+                    desireForKidsRatingFunction,
+                    senseOfHumorRatingFunction,
+                    drivenRatingFunction,
+                    additionalDetailsFunction));
                 //Potentials.Clear();
                 //foreach (var c in potentialRepo.GetAllPotentials())
                 //    Potentials.Add(c);
-                FirstName = null;
+                //FirstName = null;
             }));
+
+        /*  
+            FirstName = firstName;
+            LastName = lastName;
+            Age = age;
+            EnjoysSportsRating = enjoysSportsRating;
+            FrugalityRating = frugalityRating;
+            PhysicallyActiveRating = physicallyActiveRating;
+            DesireForKidsRating = desireForKidsRating;
+            SenseOfHumorRating = senseOfHumorRating;
+            DrivenRating = drivenRating;
+            AdditionalDetails = additionalDetails;
+         */
 
         public ICommand GetDBResults => resultsCommand ?? (resultsCommand = new SimpleCommand(
             () =>
             {
                 Potential tempPotential = potentialRepo.GetASpecificId(IdSelection);
+
                 firstNameResultsFunction = tempPotential.FirstName;
                 lastNameResultsFunction = tempPotential.LastName;
-                additionalDetailsResultsFunction = tempPotential.AdditionalDetails;
                 ageResultsFunction = tempPotential.Age;
-                personalityRatingResultsFunction = tempPotential.PersonalityRating;
-
-                if (tempPotential.EnjoysSports)
-                    enjoysSportsResultsFunction = "Yes";
-                else
-                    enjoysSportsResultsFunction = "No";
+                enjoysSportsRatingResultsFunction = tempPotential.EnjoysSportsRating;
+                frugalityResultsFunction = tempPotential.EnjoysSportsRating;
+                desireForKidsRatingResultsFunction = tempPotential.DesireForKidsRating;
+                senseOfHumorRatingResultsFunction = tempPotential.SenseOfHumorRating;
+                drivenRatingResultsFunction = tempPotential.DrivenRating;
+                additionalDetailsResultsFunction = tempPotential.AdditionalDetails;
+                
+                
                 //firstNameResultsFunction = potentialRepo.GetASpecificId(IdSelection).FirstName;
 
                 //FirstName = firstName;

@@ -23,14 +23,6 @@ namespace HW11Types
             SenseOfHumorRating = senseOfHumorRating;
             DrivenRating = drivenRating;
             AdditionalDetails = additionalDetails;
-
-            /* Religious vs Non-religious
-         * Saver vs spender
-         * active lifestlye vs non active
-         * want to have kids vs not wanting kids
-         * sense of humor
-         * Go getter vs laid back
-         */
         }
 
         public string FirstName { get; set; }

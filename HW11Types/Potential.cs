@@ -9,24 +9,33 @@ namespace HW11Types
 
         }
 
-        public Potential(string firstName, string lastName, string additionalDetails, int age, int personalityRating, bool enjoysSports)
+        public Potential(string firstName, string lastName, int age, int enjoysSportsRating, int frugalityRating, 
+            int physicallyActiveRating, int desireForKidsRating, int senseOfHumorRating, int drivenRating, string additionalDetails)
         {
             FirstName = firstName;
             LastName = lastName;
-            AdditionalDetails = additionalDetails;
             Age = age;
-            PersonalityRating = personalityRating;
-            EnjoysSports = enjoysSports;
+            EnjoysSportsRating = enjoysSportsRating;
+            FrugalityRating = frugalityRating;
+            PhysicallyActiveRating = physicallyActiveRating;
+            DesireForKidsRating = desireForKidsRating;
+            SenseOfHumorRating = senseOfHumorRating;
+            DrivenRating = drivenRating;
+            AdditionalDetails = additionalDetails;
 
         }
 
         public long Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string AdditionalDetails { get; set; }
         public int Age { get; set; }
-        public int PersonalityRating { get; set; }
-        public bool EnjoysSports { get; set; }
-        
+        public int EnjoysSportsRating { get; set; }
+        public int FrugalityRating { get; set; }
+        public int PhysicallyActiveRating { get; set; }
+        public int DesireForKidsRating { get; set; }
+        public int SenseOfHumorRating { get; set; }
+        public int DrivenRating { get; set; }
+        public string AdditionalDetails { get; set; }
+
     }
 }

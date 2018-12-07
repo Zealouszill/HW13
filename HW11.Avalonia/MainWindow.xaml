@@ -15,9 +15,9 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
+            <RowDefinition Height="4*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
-            <RowDefinition Height="1*"></RowDefinition>
-            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
         </Grid.RowDefinitions>
 
         <!-- Top left corner -->
@@ -25,9 +25,14 @@
             <TextBlock Text="First Name:" Margin="5,5,5,5"></TextBlock>
             <TextBlock Text="Last Name:" Margin="5,5,5,5"></TextBlock>
             <TextBlock Text="Age:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Personality Rating:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Does she enjoy sports?" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Additional Details:" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Enjoy Sports?" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Frugality?" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Physically Active?" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Desire for Kids?" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Sense Of Humor?" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Driven?" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Additional Details" Margin="5,5,5,5"></TextBlock>
+
             <Button Content="Add Potential" IsEnabled="true" Command="{Binding AddPotentialCommand}"/>
         </StackPanel>
 
@@ -36,53 +41,37 @@
             <TextBox Text="{Binding firstNameFunction}"></TextBox>
             <TextBox Text="{Binding lastNameFunction}"></TextBox>
             <TextBox Text="{Binding ageFunction}"></TextBox>
-            <TextBox Text="{Binding personalityRatingFunction}"></TextBox>
-            <RadioButton Margin="0, 5, 0, 4"  IsChecked="{Binding enjoysSportsFunction}"></RadioButton>
+            <TextBox Text="{Binding enjoysSportsRatingFunction}"></TextBox>
+            <TextBox Text="{Binding frugalityRatingFunction}"></TextBox>
+            <TextBox Text="{Binding physicallyActiveRatingFunction}"></TextBox>
+            <TextBox Text="{Binding desireForKidsRatingFunction}"></TextBox>
+            <TextBox Text="{Binding senseOfHumorRatingFunction}"></TextBox>
+            <TextBox Text="{Binding drivenRatingFunction}"></TextBox>
             <TextBox Text="{Binding additionalDetailsFunction}"></TextBox>
         </StackPanel>
 
         <!-- Bottom left corner -->
         <StackPanel Grid.Column="0" Grid.Row="3" Margin="10,10,10,10">
+            
             <TextBlock Text="Database Selection:" Margin="5,5,5,5"></TextBlock>
+            
             <TextBlock Text="First Name:" Margin="5,5,5,5"></TextBlock>
             <TextBlock Text="Last Name:" Margin="5,5,5,5"></TextBlock>
             <TextBlock Text="Age:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Personality Rating:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Enjoy's Sports:" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Enjoy's Sports Rating:" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Frugality Rating:" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Physically Active Rating:" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Desire for Kids Rating:" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Sense of Humor Rating:" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Driven Rating:" Margin="5,5,5,5"></TextBlock>
             <TextBlock Text="Additional Details" Margin="5,5,5,5"></TextBlock>
+            
             <Button Content="Get Results" IsEnabled="true" Command="{Binding GetDBResults}"/>
-        </StackPanel>
-
-        <!-- Bottom left corner -->
-        <StackPanel Grid.Column="1" Grid.Row="3" Margin="10,10,10,10">
-            <TextBox Text="{Binding idSelectionFunction}" Margin="5,0,5,5"></TextBox>
-            <TextBlock Text="{Binding firstNameResultsFunction}" Margin="5,0,5,5"></TextBlock>
-            <TextBlock Text="{Binding lastNameResultsFunction}" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="{Binding ageResultsFunction}" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="{Binding personalityRatingResultsFunction}" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="{Binding enjoysSportsResultsFunction}" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="{Binding additionalDetailsResultsFunction}" Margin="5,5,5,5"></TextBlock>
-        </StackPanel>
-
-        <!-- Bottom Middle section -->
-        <StackPanel Grid.Column="2" Grid.Row="2">
-            <TextBlock Text="Database ID" Margin="5,5,5,5"></TextBlock>
-            <TextBox Text="{Binding removePotentialIDFunction}"></TextBox>
-            <Button Content="Remove Potential" IsEnabled="true" Command="{Binding RemovePotentialCommand}"/>
-        </StackPanel>
-
-        <StackPanel>
             
         </StackPanel>
-        
-        <!-- Far right column -->
-        <ListBox Grid.Column="4" Grid.RowSpan="4">
-            
-        </ListBox>
 
-    </Grid>
-    
-    <!--
+
+        <!--
             FirstName = firstName;
             LastName = lastName;
             Age = age;
@@ -93,5 +82,40 @@
             SenseOfHumorRating = senseOfHumorRating;
             DrivenRating = drivenRating;
             AdditionalDetails = additionalDetails;
-    -->
+        -->
+
+        <!-- Bottom left corner -->
+        <StackPanel Grid.Column="1" Grid.Row="3" Margin="10,10,10,10">
+            <TextBox Text="{Binding idSelectionFunction}" Margin="5,0,5,5"></TextBox>
+            <TextBlock Text="{Binding firstNameResultsFunction}" Margin="5,0,5,5"></TextBlock>
+            <TextBlock Text="{Binding lastNameResultsFunction}" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="{Binding ageResultsFunction}" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="{Binding enjoysSportsRatingResultsFunction}" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="{Binding frugalityResultsFunction}" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="{Binding physicallyActiveResultsFunction}" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="{Binding desireForKidsRatingResultsFunction}" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="{Binding senseOfHumorRatingResultsFunction}" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="{Binding drivenRatingResultsFunction}" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="{Binding additionalDetailsResultsFunction}" Margin="5,5,5,5"></TextBlock>
+        </StackPanel>
+
+        <!-- Bottom Middle section -->
+        <StackPanel Grid.Column="2" Grid.Row="2">
+            <TextBlock Text="Database ID" Margin="5,5,5,5"></TextBlock>
+            <TextBox Text="{Binding removePotentialIDFunction}"></TextBox>
+            <Button Content="Remove Potential" IsEnabled="true" Command="{Binding RemovePotentialCommand}"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" Grid.Column="2">
+            
+        </StackPanel>
+        
+        <!-- Far right column -->
+        <ListBox Grid.Column="4" Grid.RowSpan="4" Margin="5, 5, 5, 5">
+            
+        </ListBox>
+
+    </Grid>
+    
+    
 </Window>

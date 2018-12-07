@@ -23,12 +23,6 @@ namespace HW11Database
 
         public void AddPotential(Potential p)
         {
-            Console.WriteLine(p.FirstName);
-            Console.WriteLine(p.LastName);
-            Console.WriteLine(p.Age);
-            Console.WriteLine(p.AdditionalDetails);
-            Console.WriteLine(p.EnjoysSports);
-            Console.WriteLine(p.PersonalityRating);
             context.Potentials.Add(p);
             context.SaveChanges();
         }
