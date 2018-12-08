@@ -93,7 +93,6 @@ C:\Users\Spencer\source\repos\HW11\HW11Xamarain\HW11Xamarain.Android\bin\Debug\X
 C:\Users\Spencer\source\repos\HW11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\linksrc\FormsViewGroup.dll.mdb
 C:\Users\Spencer\source\repos\HW11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\linksrc\HW11Xamarain.dll.mdb
 C:\Users\Spencer\source\repos\HW11\HW11Xamarain\HW11Xamarain.Android\obj\Debug\81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
-C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain\bin\Debug\netstandard2.0\HW11Xamarain.dll
 C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.Android\bin\Debug\HW11Xamarain.Android.dll
 C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.Android\bin\Debug\HW11Xamarain.Android.pdb
 C:\Users\Spencer\source\repos\HW13\HW11Xamarain\HW11Xamarain.Android\bin\Debug\com.companyname.HW11Xamarain.apk

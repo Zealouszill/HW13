@@ -12,7 +12,6 @@ namespace HW11Database
 
         public SqliteDataStore(string dbPath)
         {
-            //this.dbPath = dbPath ?? throw new ArgumentNullException(nameof(dbPath));
             context = new PotentialGirlfriendsContext();
         }
 
@@ -25,6 +24,12 @@ namespace HW11Database
         {
             Console.WriteLine(p.FirstName);
             context.Potentials.Add(p);
+            context.SaveChanges();
+        }
+
+        public void AddUserStats(UserProfileStats u)
+        {
+            context.UserStats.Add(u);
             context.SaveChanges();
         }
 
@@ -51,6 +56,8 @@ namespace HW11Database
             context.SaveChanges();
             return "Potential Removed";
         }
+
+        
     }
 
     public class PotentialGirlfriendsContext : DbContext
@@ -65,7 +72,7 @@ namespace HW11Database
             {
                 _created = true;
 
-                //Database.EnsureDeleted();
+                Database.EnsureDeleted();
                 Database.EnsureCreated();
             }
         }

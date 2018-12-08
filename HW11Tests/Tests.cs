@@ -19,7 +19,7 @@ namespace HW11Tests
         [Test]
         public void AddPotential()
         {
-            var p = new Potential("Sarah", "Bob", "No Additional Details", 23, 9, true);
+            var p = new Potential("Sarah", "Bob", 1, 23, 9, 1, 1, 1, 1, "Some details");
             var mockDataStorage = new Mock<IDataStorage>();
             var potentialRepo = new PotentialRepository(mockDataStorage.Object);
 
@@ -31,7 +31,7 @@ namespace HW11Tests
         public void RemovePotential()
         {
             var tempSQLiteDatabase = new SqliteDataStore();
-            var p = new Potential("Sarah", "Bob", "No Additional Details", 23, 9, true);
+            var p = new Potential("Sarah", "Bob", 1, 23, 9, 1, 1, 1, 1, "Some details");
             var mockDataStorage = new Mock<IDataStorage>();
             var potentialRepo = new PotentialRepository(mockDataStorage.Object);
             potentialRepo.AddPotential(p);

@@ -139,19 +139,6 @@ namespace SharedLogic.ViewModel
             set { SetField(ref PotentialAdditionalDetails, value); }
         }
 
-        /*  
-            FirstName = firstName;
-            LastName = lastName;
-            Age = age;
-            EnjoysSportsRating = enjoysSportsRating;
-            FrugalityRating = frugalityRating;
-            PhysicallyActiveRating = physicallyActiveRating;
-            DesireForKidsRating = desireForKidsRating;
-            SenseOfHumorRating = senseOfHumorRating;
-            DrivenRating = drivenRating;
-            AdditionalDetails = additionalDetails;
-         */
-
         /* End Display Database Values Code Block 
          * Add and remove Functionality Code block: */
 
@@ -280,7 +267,6 @@ namespace SharedLogic.ViewModel
             set { SetField(ref UserFrugalityRating, value); }
         }
 
-
         private int UserPhysicallyActiveRating;
         public int userPhysicallyActiveRatingFunction
         {
@@ -349,6 +335,8 @@ namespace SharedLogic.ViewModel
                     senseOfHumorRatingFunction,
                     drivenRatingFunction,
                     additionalDetailsFunction));
+
+                
                 //Potentials.Clear();
                 //foreach (var c in potentialRepo.GetAllPotentials())
                 //    Potentials.Add(c);
@@ -364,17 +352,17 @@ namespace SharedLogic.ViewModel
             {
                 //Potential test = new Potential();
 
-                potentialRepo.AddPotential(new Potential(
-                    firstNameFunction,
-                    lastNameFunction,
-                    ageFunction,
-                    enjoysSportsRatingFunction,
-                    frugalityRatingFunction,
-                    physicallyActiveRatingFunction,
-                    desireForKidsRatingFunction,
-                    senseOfHumorRatingFunction,
-                    drivenRatingFunction,
-                    additionalDetailsFunction));
+                potentialRepo.AddUserProfile(new UserProfileStats(
+                    userFirstNameFunction,
+                    userLastNameFunction,
+                    userAgeFunction,
+                    userEnjoysSportsRatingFunction,
+                    userFrugalityRatingFunction,
+                    userPhysicallyActiveRatingFunction,
+                    userDesireForKidsRatingFunction,
+                    userSenseOfHumorRatingFunction,
+                    userDrivenRatingFunction,
+                    userAdditionalDetailsFunction));
                 //Potentials.Clear();
                 //foreach (var c in potentialRepo.GetAllPotentials())
                 //    Potentials.Add(c);
