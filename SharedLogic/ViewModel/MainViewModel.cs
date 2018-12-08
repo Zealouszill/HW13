@@ -13,6 +13,7 @@ namespace SharedLogic.ViewModel
     {
 
         public ICommand addPotentialCommand;
+        public ICommand addUserCommand;
         public ICommand resultsCommand;
         public ICommand removePotentialCommand;
 
@@ -329,6 +330,32 @@ namespace SharedLogic.ViewModel
          */
 
         public ICommand AddPotentialCommand => addPotentialCommand ?? (addPotentialCommand = new SimpleCommand(
+            () =>
+            {
+                return true;
+            },
+            () =>
+            {
+                //Potential test = new Potential();
+
+                potentialRepo.AddPotential(new Potential(
+                    firstNameFunction,
+                    lastNameFunction,
+                    ageFunction,
+                    enjoysSportsRatingFunction,
+                    frugalityRatingFunction,
+                    physicallyActiveRatingFunction,
+                    desireForKidsRatingFunction,
+                    senseOfHumorRatingFunction,
+                    drivenRatingFunction,
+                    additionalDetailsFunction));
+                //Potentials.Clear();
+                //foreach (var c in potentialRepo.GetAllPotentials())
+                //    Potentials.Add(c);
+                //FirstName = null;
+            }));
+
+        public ICommand AddUserCommand => addUserCommand ?? (addUserCommand = new SimpleCommand(
             () =>
             {
                 return true;

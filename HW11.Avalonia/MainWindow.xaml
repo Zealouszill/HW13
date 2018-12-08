@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:sharedvm="clr-namespace:SharedLogic.ViewModel;assembly=SharedLogic"
         Title="HW11.Avalonia" SizeToContent="WidthAndHeight">
-    
+
     <Grid Width="1300" Height="750">
 
         <Grid.ColumnDefinitions>
@@ -20,7 +20,7 @@
             <RowDefinition Height="4*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <!-- Top left corner -->
+        <!-- Top left corner. Potential Entry Data Definitions -->
         <StackPanel Grid.Column="0" Margin="10,10,10,10">
             <TextBlock Text="First Name:" Margin="5,5,5,5"></TextBlock>
             <TextBlock Text="Last Name:" Margin="5,5,5,5"></TextBlock>
@@ -36,7 +36,7 @@
             <Button Content="Add Potential" IsEnabled="true" Command="{Binding AddPotentialCommand}"/>
         </StackPanel>
 
-        <!-- Top left corner -->
+        <!-- Top left corner. Potential Entry Data TextBoxes -->
         <StackPanel Grid.Column="1" Margin="10,10,10,10">
             <TextBox Text="{Binding firstNameFunction}"></TextBox>
             <TextBox Text="{Binding lastNameFunction}"></TextBox>
@@ -50,11 +50,11 @@
             <TextBox Text="{Binding additionalDetailsFunction}"></TextBox>
         </StackPanel>
 
-        <!-- Bottom left corner -->
+        <!-- Bottom left corner. Potential Details Display Definitions -->
         <StackPanel Grid.Column="0" Grid.Row="3" Margin="10,10,10,10">
-            
+
             <TextBlock Text="Database Selection:" Margin="5,5,5,5"></TextBlock>
-            
+
             <TextBlock Text="First Name:" Margin="5,5,5,5"></TextBlock>
             <TextBlock Text="Last Name:" Margin="5,5,5,5"></TextBlock>
             <TextBlock Text="Age:" Margin="5,5,5,5"></TextBlock>
@@ -65,26 +65,12 @@
             <TextBlock Text="Sense of Humor Rating:" Margin="5,5,5,5"></TextBlock>
             <TextBlock Text="Driven Rating:" Margin="5,5,5,5"></TextBlock>
             <TextBlock Text="Additional Details" Margin="5,5,5,5"></TextBlock>
-            
+
             <Button Content="Get Results" IsEnabled="true" Command="{Binding GetDBResults}"/>
-            
+
         </StackPanel>
 
-
-        <!--
-            FirstName = firstName;
-            LastName = lastName;
-            Age = age;
-            EnjoysSportsRating = enjoysSportsRating;
-            FrugalityRating = frugalityRating;
-            PhysicallyActiveRating = physicallyActiveRating;
-            DesireForKidsRating = desireForKidsRating;
-            SenseOfHumorRating = senseOfHumorRating;
-            DrivenRating = drivenRating;
-            AdditionalDetails = additionalDetails;
-        -->
-
-        <!-- Bottom left corner -->
+        <!-- Bottom left corner. Potential Details Display Values  -->
         <StackPanel Grid.Column="1" Grid.Row="3" Margin="10,10,10,10">
             <TextBox Text="{Binding idSelectionFunction}" Margin="5,0,5,5"></TextBox>
             <TextBlock Text="{Binding firstNameResultsFunction}" Margin="5,0,5,5"></TextBlock>
@@ -99,23 +85,60 @@
             <TextBlock Text="{Binding additionalDetailsResultsFunction}" Margin="5,5,5,5"></TextBlock>
         </StackPanel>
 
-        <!-- Bottom Middle section -->
+        <!-- Bottom Middle section. Potential Database Removal -->
         <StackPanel Grid.Column="2" Grid.Row="2">
             <TextBlock Text="Database ID" Margin="5,5,5,5"></TextBlock>
             <TextBox Text="{Binding removePotentialIDFunction}"></TextBox>
             <Button Content="Remove Potential" IsEnabled="true" Command="{Binding RemovePotentialCommand}"/>
         </StackPanel>
 
-        <StackPanel Grid.Row="0" Grid.Column="2">
-            
+        <!-- Top Middle. User Entry Data Definitions -->
+        <StackPanel Grid.Row="0" Grid.Column="2" Margin="10,10,10,10">
+            <TextBlock Text="First Name:" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Last Name:" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Age:" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Enjoy's Sports Rating:" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Frugality Rating:" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Physically Active Rating:" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Desire for Kids Rating:" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Sense of Humor Rating:" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Driven Rating:" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Additional Details" Margin="5,5,5,5"></TextBlock>
+
+            <Button Content="Add User" IsEnabled="true" Command="{Binding AddUserCommand}"/>
         </StackPanel>
-        
+
+        <!-- Top Middle. User Entry Data TextBoxes -->
+        <StackPanel Grid.Column="3" Grid.Row="0"  Margin="10,10,10,10">
+            <TextBox Text="{Binding userFirstNameFunction}"></TextBox>
+            <TextBox Text="{Binding userLastNameFunction}"></TextBox>
+            <TextBox Text="{Binding userAgeFunction}"></TextBox>
+            <TextBox Text="{Binding userEnjoysSportsRatingFunction}"></TextBox>
+            <TextBox Text="{Binding userFrugalityRatingFunction}"></TextBox>
+            <TextBox Text="{Binding userPhysicallyActiveRatingFunction}"></TextBox>
+            <TextBox Text="{Binding userDesireForKidsRatingFunction}"></TextBox>
+            <TextBox Text="{Binding userSenseOfHumorRatingFunction}"></TextBox>
+            <TextBox Text="{Binding userDrivenRatingFunction}"></TextBox>
+            <TextBox Text="{Binding userAdditionalDetailsFunction}"></TextBox>
+        </StackPanel>
+
+        <!--
+            FirstName = firstName;
+            LastName = lastName;
+            Age = age;
+            EnjoysSportsRating = enjoysSportsRating;
+            FrugalityRating = frugalityRating;
+            PhysicallyActiveRating = physicallyActiveRating;
+            DesireForKidsRating = desireForKidsRating;
+            SenseOfHumorRating = senseOfHumorRating;
+            DrivenRating = drivenRating;
+            AdditionalDetails = additionalDetails;
+        -->
+
         <!-- Far right column -->
         <ListBox Grid.Column="4" Grid.RowSpan="4" Margin="5, 5, 5, 5">
-            
+
         </ListBox>
 
     </Grid>
-    
-    
 </Window>
