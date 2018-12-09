@@ -72,7 +72,7 @@ namespace HW11Database
             {
                 _created = true;
 
-                Database.EnsureDeleted();
+                //Database.EnsureDeleted();
                 Database.EnsureCreated();
             }
         }

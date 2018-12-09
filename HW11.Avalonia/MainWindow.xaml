@@ -133,12 +133,26 @@
             SenseOfHumorRating = senseOfHumorRating;
             DrivenRating = drivenRating;
             AdditionalDetails = additionalDetails;
+        
+        <ListBox.ItemTemplate>
+
+            </ListBox.ItemTemplate>
         -->
 
         <!-- Far right column -->
-        <ListBox Grid.Column="4" Grid.RowSpan="4" Margin="5, 5, 5, 5">
-
+        <ListBox Items="{Binding ListOfAllPotentials}" SelectedItem=""  Grid.Column="4" Grid.RowSpan="1" Margin="5, 5, 5, 5">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding FirstName}"/>
+                        <TextBlock Text="  "/>
+                        <TextBlock Text="{Binding LastName}"/>
+                        <TextBlock Text="      Id: "/>
+                        <TextBlock Text="{Binding Id}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
         </ListBox>
-
+        
     </Grid>
 </Window>

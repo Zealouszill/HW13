@@ -25,7 +25,7 @@ namespace HW11Types
             }
         }
 
-        public IEnumerable<Potential> GetAllCards()
+        public IEnumerable<Potential> GetAllPotentials()
         {
             return dataStore.GetAllPotentials();
         }

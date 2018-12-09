@@ -18,15 +18,16 @@ namespace SharedLogic.ViewModel
         public ICommand removePotentialCommand;
 
         public List<string> Items { get; }
-        public ObservableCollection<Potential> ListOfAllPotentials { get; }
 
 
-        //private readonly IDataStorage dataStorage;
+        private readonly IDataStorage dataStorage;
 
         public MainViewModel()
         {
             Console.WriteLine("This code executed");
             TestString = "This word";
+
+            ListOfAllPotentials = new ObservableCollection<Potential>(dataStorage.GetAllPotentials());
 
             Items = new List<string>()
             {
@@ -38,18 +39,23 @@ namespace SharedLogic.ViewModel
 
         public MainViewModel(PotentialRepository potentialRepo)
         {
+            Console.WriteLine("This code executed2");
+
             this.potentialRepo = potentialRepo;
 
             Items = new List<string>()
             {
                 "Yes",
                 "No"
-            };            
+            };
             //var p = dataStore.GetById(2);
+            //Console.WriteLine(ListOfAllPotentials[0].FirstName);
+            ListOfAllPotentials = new ObservableCollection<Potential>(this.potentialRepo.GetAllPotentials());
 
         }
 
-        //public IDataStorage DataStore => dataStorage;
+
+        public IDataStorage DataStore => dataStorage;
 
         private readonly PotentialRepository potentialRepo;
         
@@ -60,12 +66,13 @@ namespace SharedLogic.ViewModel
             set { SetField(ref TestString, value); }
         }
 
-        private string TextEnjoysSports;
-        public string textEnjoysSportsFunction
+        private Potential ReferencedPotential;
+        public Potential referencedPotentialFunction
         {
-            get { return TextEnjoysSports; }
-            set { SetField(ref TextEnjoysSports, value); }
+            get { return ReferencedPotential; }
+            set { SetField(ref ReferencedPotential, value); }
         }
+
 
         /* Display Database Input Values Code block: */
 
@@ -419,6 +426,9 @@ namespace SharedLogic.ViewModel
         //public ICommand AddPotentialCommand => addPotentialCommand ?? (addPotentialCommand = new SimpleCommand(() => ChildControlViewModel = new AddPotentialViewModel(potentialRepo)));
 
         //public object ChildControlViewModel { get; set; }
+
+        public ObservableCollection<Potential> ListOfAllPotentials { get; private set; }
+
 
         #region INotifyPropertyChanged Implementation
         public event PropertyChangedEventHandler PropertyChanged;
