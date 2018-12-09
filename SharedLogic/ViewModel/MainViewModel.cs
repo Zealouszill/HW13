@@ -73,7 +73,6 @@ namespace SharedLogic.ViewModel
             set { SetField(ref ReferencedPotential, value); }
         }
 
-
         /* Display Database Input Values Code block: */
 
         private string PotentialFirstName;
@@ -310,6 +309,7 @@ namespace SharedLogic.ViewModel
         }
 
         /*  
+         *  Id = id;
             FirstName = firstName;
             LastName = lastName;
             Age = age;
