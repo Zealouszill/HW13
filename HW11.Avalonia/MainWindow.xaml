@@ -6,42 +6,105 @@
 
     <Grid Width="1300" Height="750">
 
+        
+        
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"></ColumnDefinition>
             <ColumnDefinition Width="2*"></ColumnDefinition>
-            <ColumnDefinition Width="2*"></ColumnDefinition>
-            <ColumnDefinition Width="2*"></ColumnDefinition>
-            <ColumnDefinition Width="2*"></ColumnDefinition>
-            <ColumnDefinition Width="3*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="4*"></RowDefinition>
-            <RowDefinition Height="1*"></RowDefinition>
-            <RowDefinition Height="4*"></RowDefinition>
-        </Grid.RowDefinitions>
 
-        <!-- Top left corner. Potential Entry Data Definitions -->
-        <StackPanel Grid.Column="0" Margin="10,10,10,10">
-            <TextBlock Text="First Name:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Last Name:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Age:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Enjoy Sports?" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Frugality?" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Physically Active?" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Desire for Kids?" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Sense Of Humor?" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Driven?" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Additional Details" Margin="5,5,5,5"></TextBlock>
 
-            <Button Content="Add Potential" IsEnabled="true" Command="{Binding AddPotentialCommand}"/>
-        </StackPanel>
+        <TabControl>
+            <TabItem Header="Compatibility Calculator">
+                <Grid>
 
-        <!-- Top left corner. Potential Entry Data TextBoxes -->
-        <StackPanel Grid.Column="1" Margin="10,10,10,10">
-            <TextBox Text="{Binding firstNameFunction}"></TextBox>
-            <TextBox Text="{Binding lastNameFunction}"></TextBox>
-            <TextBox Text="{Binding ageFunction}"></TextBox>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="4*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="4*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    
+                    <!-- Bottom left corner. Potential Details Display Definitions -->
+                    <StackPanel Grid.Column="0" Grid.Row="0" Margin="10,10,10,10">
+
+                        <TextBlock Text="Database Selection:" Margin="5,5,5,5"></TextBlock>
+
+                        <TextBlock Text="First Name:" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Last Name:" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Age:" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Enjoy's Sports Rating:" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Frugality Rating:" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Physically Active Rating:" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Desire for Kids Rating:" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Sense of Humor Rating:" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Driven Rating:" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Additional Details" Margin="5,5,5,5"></TextBlock>
+
+                    </StackPanel>
+
+                    <!-- Bottom left corner. Potential Details Display Values  -->
+                    <StackPanel DataContext="{Binding referencedPotentialFunction}"  Grid.Column="1" Grid.Row="0" Margin="10,10,10,10">
+                        <TextBlock Text="{Binding Path = FirstName}" Margin="5,0,5,5"></TextBlock>
+                        <TextBlock Text="{Binding Path = LastName}" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="{Binding Path = Age}" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="{Binding Path = EnjoysSportsRating}" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="{Binding Path = FrugalityRating}" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="{Binding Path = PhysicallyActiveRating}" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="{Binding Path = DesireForKidsRating}" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="{Binding Path = SenseOfHumorRating}" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="{Binding Path = DrivenRating}" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="{Binding Path = AdditionalDetails}" Margin="5,5,5,5"></TextBlock>
+                    </StackPanel>
+
+                </Grid>
+                
+            </TabItem>
             
+            <TabItem Header="Potential Settings">
+
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="4*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="4*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <!-- Top left corner. Potential Entry Data Definitions -->
+                    <StackPanel Grid.Column="0" Margin="10,10,10,10">
+                        <TextBlock Text="First Name:" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Last Name:" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Age:" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Enjoy Sports?" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Frugality?" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Physically Active?" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Desire for Kids?" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Sense Of Humor?" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Driven?" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Additional Details" Margin="5,5,5,5"></TextBlock>
+
+                        <Button Content="Add Potential" IsEnabled="true" Command="{Binding AddPotentialCommand}"/>
+                    </StackPanel>
+
+                    <!-- Top left corner. Potential Entry Data TextBoxes -->
+                    <StackPanel Grid.Column="1" Margin="10,10,10,10">
+                        <TextBox Text="{Binding firstNameFunction}"></TextBox>
+                        <TextBox Text="{Binding lastNameFunction}"></TextBox>
+                        <TextBox Text="{Binding ageFunction}"></TextBox>
+                        <TextBox Text="{Binding enjoysSportsRatingFunction}"></TextBox>
+
+                        <!--
             <TextBox>
                 <TextBox.Text>
                     <Binding Path="enjoysSportsRatingFunction">
@@ -51,87 +114,72 @@
                     </Binding>
                 </TextBox.Text>
             </TextBox>
-            <TextBox Text="{Binding frugalityRatingFunction}"></TextBox>
-            <TextBox Text="{Binding physicallyActiveRatingFunction}"></TextBox>
-            <TextBox Text="{Binding desireForKidsRatingFunction}"></TextBox>
-            <TextBox Text="{Binding senseOfHumorRatingFunction}"></TextBox>
-            <TextBox Text="{Binding drivenRatingFunction}"></TextBox>
-            <TextBox Text="{Binding additionalDetailsFunction}"></TextBox>
-        </StackPanel>
+            -->
 
-        <!-- Bottom left corner. Potential Details Display Definitions -->
-        <StackPanel Grid.Column="0" Grid.Row="3" Margin="10,10,10,10">
+                        <TextBox Text="{Binding frugalityRatingFunction}"></TextBox>
+                        <TextBox Text="{Binding physicallyActiveRatingFunction}"></TextBox>
+                        <TextBox Text="{Binding desireForKidsRatingFunction}"></TextBox>
+                        <TextBox Text="{Binding senseOfHumorRatingFunction}"></TextBox>
+                        <TextBox Text="{Binding drivenRatingFunction}"></TextBox>
+                        <TextBox Text="{Binding additionalDetailsFunction}"></TextBox>
+                    </StackPanel>
 
-            <TextBlock Text="Database Selection:" Margin="5,5,5,5"></TextBlock>
+                    <!-- Bottom Middle section. Potential Database Removal -->
+                    <StackPanel Grid.Column="1" Grid.Row="2">
+                        <TextBlock Text="Database ID" Margin="5,5,5,5"></TextBlock>
+                        <TextBox Text="{Binding removePotentialIDFunction}"></TextBox>
+                        <Button Content="Remove Potential" IsEnabled="true" Command="{Binding RemovePotentialCommand}"/>
+                    </StackPanel>
 
-            <TextBlock Text="First Name:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Last Name:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Age:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Enjoy's Sports Rating:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Frugality Rating:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Physically Active Rating:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Desire for Kids Rating:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Sense of Humor Rating:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Driven Rating:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Additional Details" Margin="5,5,5,5"></TextBlock>
+                </Grid>
+            </TabItem>
+            
+            <TabItem Header="User Stats">
 
-            <Button Content="Get Results" IsEnabled="true" Command="{Binding GetDBResults}"/>
+                <Grid>
 
-        </StackPanel>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5*"></ColumnDefinition>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
 
-        <!-- Bottom left corner. Potential Details Display Values  -->
-        <StackPanel DataContext="{Binding referencedPotentialFunction}"  Grid.Column="1" Grid.Row="3" Margin="10,10,10,10">
-            <TextBox Text="{Binding idSelectionFunction}" Margin="5,0,5,5"></TextBox>
-            <TextBlock Text="{Binding Path = FirstName}" Margin="5,0,5,5"></TextBlock>
-            <TextBlock Text="{Binding Path = LastName}" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="{Binding Path = Age}" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="{Binding Path = EnjoysSportsRating}" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="{Binding Path = FrugalityRating}" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="{Binding Path = PhysicallyActiveRating}" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="{Binding Path = DesireForKidsRating}" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="{Binding Path = SenseOfHumorRating}" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="{Binding Path = DrivenRating}" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="{Binding Path = AdditionalDetails}" Margin="5,5,5,5"></TextBlock>
-        </StackPanel>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="4*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="4*"></RowDefinition>
+                    </Grid.RowDefinitions>
 
-        <!-- Bottom Middle section. Potential Database Removal -->
-        <StackPanel Grid.Column="2" Grid.Row="2">
-            <TextBlock Text="Database ID" Margin="5,5,5,5"></TextBlock>
-            <TextBox Text="{Binding removePotentialIDFunction}"></TextBox>
-            <Button Content="Remove Potential" IsEnabled="true" Command="{Binding RemovePotentialCommand}"/>
-        </StackPanel>
+                    <!-- Top Middle. User Entry Data Definitions -->
+                    <StackPanel Grid.Row="0" Grid.Column="0" Margin="10,10,10,10">
+                        <TextBlock Text="First Name:" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Last Name:" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Age:" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Enjoy's Sports Rating:" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Frugality Rating:" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Physically Active Rating:" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Desire for Kids Rating:" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Sense of Humor Rating:" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Driven Rating:" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Additional Details" Margin="5,5,5,5"></TextBlock>
 
-        <!-- Top Middle. User Entry Data Definitions -->
-        <StackPanel Grid.Row="0" Grid.Column="2" Margin="10,10,10,10">
-            <TextBlock Text="First Name:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Last Name:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Age:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Enjoy's Sports Rating:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Frugality Rating:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Physically Active Rating:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Desire for Kids Rating:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Sense of Humor Rating:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Driven Rating:" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="Additional Details" Margin="5,5,5,5"></TextBlock>
+                        <Button Content="Add User" IsEnabled="true" Command="{Binding AddUserCommand}"/>
+                    </StackPanel>
 
-            <Button Content="Add User" IsEnabled="true" Command="{Binding AddUserCommand}"/>
-        </StackPanel>
+                    <!-- Top Middle. User Entry Data TextBoxes -->
+                    <StackPanel Grid.Column="1" Grid.Row="0"  Margin="10,10,10,10">
+                        <TextBox Text="{Binding userFirstNameFunction}"></TextBox>
+                        <TextBox Text="{Binding userLastNameFunction}"></TextBox>
+                        <TextBox Text="{Binding userAgeFunction}"></TextBox>
+                        <TextBox Text="{Binding userEnjoysSportsRatingFunction}"></TextBox>
+                        <TextBox Text="{Binding userFrugalityRatingFunction}"></TextBox>
+                        <TextBox Text="{Binding userPhysicallyActiveRatingFunction}"></TextBox>
+                        <TextBox Text="{Binding userDesireForKidsRatingFunction}"></TextBox>
+                        <TextBox Text="{Binding userSenseOfHumorRatingFunction}"></TextBox>
+                        <TextBox Text="{Binding userDrivenRatingFunction}"></TextBox>
+                        <TextBox Text="{Binding userAdditionalDetailsFunction}"></TextBox>
+                    </StackPanel>
 
-        <!-- Top Middle. User Entry Data TextBoxes -->
-        <StackPanel Grid.Column="3" Grid.Row="0"  Margin="10,10,10,10">
-            <TextBox Text="{Binding userFirstNameFunction}"></TextBox>
-            <TextBox Text="{Binding userLastNameFunction}"></TextBox>
-            <TextBox Text="{Binding userAgeFunction}"></TextBox>
-            <TextBox Text="{Binding userEnjoysSportsRatingFunction}"></TextBox>
-            <TextBox Text="{Binding userFrugalityRatingFunction}"></TextBox>
-            <TextBox Text="{Binding userPhysicallyActiveRatingFunction}"></TextBox>
-            <TextBox Text="{Binding userDesireForKidsRatingFunction}"></TextBox>
-            <TextBox Text="{Binding userSenseOfHumorRatingFunction}"></TextBox>
-            <TextBox Text="{Binding userDrivenRatingFunction}"></TextBox>
-            <TextBox Text="{Binding userAdditionalDetailsFunction}"></TextBox>
-        </StackPanel>
-
-        <!--
+                    <!--
             FirstName = firstName;
             LastName = lastName;
             Age = age;
@@ -148,8 +196,13 @@
             </ListBox.ItemTemplate>
         -->
 
+                </Grid>
+                
+            </TabItem>
+        </TabControl>
+ 
         <!-- Far right column -->
-        <ListBox Items="{Binding ListOfAllPotentials}" SelectedItem="{Binding referencedPotentialFunction}"  Grid.Column="4" Grid.RowSpan="1" Margin="5, 5, 5, 5">
+        <ListBox Items="{Binding ListOfAllPotentials}" SelectedItem="{Binding referencedPotentialFunction}"  Grid.Column="4" Grid.RowSpan="2" Margin="5, 5, 5, 5">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
