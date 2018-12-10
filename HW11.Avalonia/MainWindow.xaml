@@ -41,7 +41,16 @@
             <TextBox Text="{Binding firstNameFunction}"></TextBox>
             <TextBox Text="{Binding lastNameFunction}"></TextBox>
             <TextBox Text="{Binding ageFunction}"></TextBox>
-            <TextBox Text="{Binding enjoysSportsRatingFunction}"></TextBox>
+            
+            <TextBox>
+                <TextBox.Text>
+                    <Binding Path="enjoysSportsRatingFunction">
+                        <Binding.ValidationRules>
+                            <sharedvm:OneToTenValidation/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
             <TextBox Text="{Binding frugalityRatingFunction}"></TextBox>
             <TextBox Text="{Binding physicallyActiveRatingFunction}"></TextBox>
             <TextBox Text="{Binding desireForKidsRatingFunction}"></TextBox>
@@ -70,36 +79,7 @@
 
         </StackPanel>
 
-        <!-- Bottom left corner. Potential Details Display Values  
-        <StackPanel Grid.Column="1" Grid.Row="3" Margin="10,10,10,10">
-            <TextBox Text="{Binding idSelectionFunction}" Margin="5,0,5,5"></TextBox>
-            <TextBlock Text="{Binding firstNameResultsFunction}" Margin="5,0,5,5"></TextBlock>
-            <TextBlock Text="{Binding lastNameResultsFunction}" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="{Binding ageResultsFunction}" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="{Binding enjoysSportsRatingResultsFunction}" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="{Binding frugalityResultsFunction}" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="{Binding physicallyActiveResultsFunction}" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="{Binding desireForKidsRatingResultsFunction}" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="{Binding senseOfHumorRatingResultsFunction}" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="{Binding drivenRatingResultsFunction}" Margin="5,5,5,5"></TextBlock>
-            <TextBlock Text="{Binding additionalDetailsResultsFunction}" Margin="5,5,5,5"></TextBlock>
-        </StackPanel> -->
-        
-        <!-- 
-
-        Id = id;
-            FirstName = firstName;
-            LastName = lastName;
-            Age = age;
-            EnjoysSportsRating = enjoysSportsRating;
-            FrugalityRating = frugalityRating;
-            PhysicallyActiveRating = physicallyActiveRating;
-            DesireForKidsRating = desireForKidsRating;
-            SenseOfHumorRating = senseOfHumorRating;
-            DrivenRating = drivenRating;
-            AdditionalDetails = additionalDetails;
-
-        Bottom left corner. Potential Details Display Values  -->
+        <!-- Bottom left corner. Potential Details Display Values  -->
         <StackPanel DataContext="{Binding referencedPotentialFunction}"  Grid.Column="1" Grid.Row="3" Margin="10,10,10,10">
             <TextBox Text="{Binding idSelectionFunction}" Margin="5,0,5,5"></TextBox>
             <TextBlock Text="{Binding Path = FirstName}" Margin="5,0,5,5"></TextBlock>
