@@ -43,6 +43,28 @@ namespace HW11Database
             return context.Potentials.Find((long)id);
         }
 
+        public UserProfileStats GetUserStats()
+        {
+            return context.UserStats.Find((long)1);
+        }
+
+        public void ChangeUserStats(UserProfileStats u)
+        {
+            
+            context.UserStats.Find((long)1).FirstName = u.FirstName;
+            context.UserStats.Find((long)1).LastName = u.LastName;
+            context.UserStats.Find((long)1).Age = u.Age;
+            context.UserStats.Find((long)1).EnjoysSportsRating = u.EnjoysSportsRating;
+            context.UserStats.Find((long)1).FrugalityRating = u.FrugalityRating;
+            context.UserStats.Find((long)1).PhysicallyActiveRating = u.PhysicallyActiveRating;
+            context.UserStats.Find((long)1).DesireForKidsRating = u.DesireForKidsRating;
+            context.UserStats.Find((long)1).SenseOfHumorRating = u.SenseOfHumorRating;
+            context.UserStats.Find((long)1).DrivenRating = u.DrivenRating;
+            context.UserStats.Find((long)1).AdditionalDetails = u.AdditionalDetails;
+
+            context.SaveChanges();
+        }
+
         public string RemovePotentialById(int id)
         {
             try
@@ -56,8 +78,6 @@ namespace HW11Database
             context.SaveChanges();
             return "Potential Removed";
         }
-
-        
     }
 
     public class PotentialGirlfriendsContext : DbContext

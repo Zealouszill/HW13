@@ -64,3 +64,17 @@ System.Reflection.Extensions
 System.Threading
 System.Resources.ResourceManager
 System.Threading.Tasks
+PresentationFramework
+System.Xaml
+WindowsBase
+PresentationCore
+System.Configuration
+UIAutomationProvider
+UIAutomationTypes
+ReachFramework
+System.Printing
+Accessibility
+System.Deployment
+System.Windows.Input.Manipulations
+System.Windows.Forms
+System.Runtime.Serialization.Formatters.Soap

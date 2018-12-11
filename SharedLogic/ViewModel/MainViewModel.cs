@@ -52,6 +52,18 @@ namespace SharedLogic.ViewModel
             //Console.WriteLine(ListOfAllPotentials[0].FirstName);
             ListOfAllPotentials = new ObservableCollection<Potential>(this.potentialRepo.GetAllPotentials());
 
+            var temp = potentialRepo.GetUserStats();
+
+            userFirstNameFunction = temp.FirstName;
+            userLastNameFunction = temp.LastName;
+            userAgeFunction = temp.Age;
+            userEnjoysSportsRatingFunction= temp.EnjoysSportsRating;
+            userFrugalityRatingFunction= temp.FrugalityRating;
+            userPhysicallyActiveRatingFunction= temp.PhysicallyActiveRating;
+            userDesireForKidsRatingFunction = temp.DesireForKidsRating;
+            userSenseOfHumorRatingFunction = temp.SenseOfHumorRating;
+            userDrivenRatingFunction = temp.DrivenRating;
+            userAdditionalDetailsFunction = temp.AdditionalDetails;
         }
 
 
@@ -358,8 +370,8 @@ namespace SharedLogic.ViewModel
             () =>
             {
                 //Potential test = new Potential();
-
-                potentialRepo.AddUserProfile(new UserProfileStats(
+                
+                potentialRepo.ChangeUserStats(new UserProfileStats(
                     userFirstNameFunction,
                     userLastNameFunction,
                     userAgeFunction,
@@ -370,6 +382,21 @@ namespace SharedLogic.ViewModel
                     userSenseOfHumorRatingFunction,
                     userDrivenRatingFunction,
                     userAdditionalDetailsFunction));
+
+
+                //potentialRepo.AddUserProfile(new UserProfileStats(
+                //    userFirstNameFunction,
+                //    userLastNameFunction,
+                //    userAgeFunction,
+                //    userEnjoysSportsRatingFunction,
+                //    userFrugalityRatingFunction,
+                //    userPhysicallyActiveRatingFunction,
+                //    userDesireForKidsRatingFunction,
+                //    userSenseOfHumorRatingFunction,
+                //    userDrivenRatingFunction,
+                //    userAdditionalDetailsFunction));
+
+
                 //Potentials.Clear();
                 //foreach (var c in potentialRepo.GetAllPotentials())
                 //    Potentials.Add(c);

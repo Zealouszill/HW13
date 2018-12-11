@@ -17,23 +17,21 @@
 
         <TabControl>
             <TabItem Header="Compatibility Calculator">
-                <Grid>
+                <Grid VerticalAlignment="center">
 
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1*"></ColumnDefinition>
-                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
 
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="4*"></RowDefinition>
-                        <RowDefinition Height="1*"></RowDefinition>
-                        <RowDefinition Height="4*"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
                     </Grid.RowDefinitions>
                     
                     <!-- Bottom left corner. Potential Details Display Definitions -->
-                    <StackPanel Grid.Column="0" Grid.Row="0" Margin="10,10,10,10">
-
-                        <TextBlock Text="Database Selection:" Margin="5,5,5,5"></TextBlock>
+                    <StackPanel Margin="40,10,10,10" Grid.Column="0">
 
                         <TextBlock Text="First Name:" Margin="5,5,5,5"></TextBlock>
                         <TextBlock Text="Last Name:" Margin="5,5,5,5"></TextBlock>
@@ -49,8 +47,8 @@
                     </StackPanel>
 
                     <!-- Bottom left corner. Potential Details Display Values  -->
-                    <StackPanel DataContext="{Binding referencedPotentialFunction}"  Grid.Column="1" Grid.Row="0" Margin="10,10,10,10">
-                        <TextBlock Text="{Binding Path = FirstName}" Margin="5,0,5,5"></TextBlock>
+                    <StackPanel DataContext="{Binding referencedPotentialFunction}" Margin="10,10,10,10" Grid.Column="1">
+                        <TextBlock Text="{Binding Path = FirstName}" Margin="5,5,5,5"></TextBlock>
                         <TextBlock Text="{Binding Path = LastName}" Margin="5,5,5,5"></TextBlock>
                         <TextBlock Text="{Binding Path = Age}" Margin="5,5,5,5"></TextBlock>
                         <TextBlock Text="{Binding Path = EnjoysSportsRating}" Margin="5,5,5,5"></TextBlock>
@@ -71,14 +69,14 @@
                 <Grid>
 
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1*"></ColumnDefinition>
-                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition MinWidth="300" MaxWidth="400"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
 
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="4*"></RowDefinition>
-                        <RowDefinition Height="1*"></RowDefinition>
-                        <RowDefinition Height="4*"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
                     </Grid.RowDefinitions>
 
                     <!-- Top left corner. Potential Entry Data Definitions -->
@@ -94,7 +92,7 @@
                         <TextBlock Text="Driven?" Margin="5,5,5,5"></TextBlock>
                         <TextBlock Text="Additional Details" Margin="5,5,5,5"></TextBlock>
 
-                        <Button Content="Add Potential" IsEnabled="true" Command="{Binding AddPotentialCommand}"/>
+                        <Button Content="Add Potential" Grid.ColumnSpan="0" IsEnabled="true" Command="{Binding AddPotentialCommand}"/>
                     </StackPanel>
 
                     <!-- Top left corner. Potential Entry Data TextBoxes -->
@@ -103,19 +101,6 @@
                         <TextBox Text="{Binding lastNameFunction}"></TextBox>
                         <TextBox Text="{Binding ageFunction}"></TextBox>
                         <TextBox Text="{Binding enjoysSportsRatingFunction}"></TextBox>
-
-                        <!--
-            <TextBox>
-                <TextBox.Text>
-                    <Binding Path="enjoysSportsRatingFunction">
-                        <Binding.ValidationRules>
-                            <sharedvm:OneToTenValidation/>
-                        </Binding.ValidationRules>
-                    </Binding>
-                </TextBox.Text>
-            </TextBox>
-            -->
-
                         <TextBox Text="{Binding frugalityRatingFunction}"></TextBox>
                         <TextBox Text="{Binding physicallyActiveRatingFunction}"></TextBox>
                         <TextBox Text="{Binding desireForKidsRatingFunction}"></TextBox>
@@ -126,7 +111,7 @@
 
                     <!-- Bottom Middle section. Potential Database Removal -->
                     <StackPanel Grid.Column="1" Grid.Row="2">
-                        <TextBlock Text="Database ID" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock Text="Potential ID" Margin="5,5,5,5"></TextBlock>
                         <TextBox Text="{Binding removePotentialIDFunction}"></TextBox>
                         <Button Content="Remove Potential" IsEnabled="true" Command="{Binding RemovePotentialCommand}"/>
                     </StackPanel>
@@ -139,14 +124,14 @@
                 <Grid>
 
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="5*"></ColumnDefinition>
-                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition MinWidth="300" MaxWidth="400"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
 
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="4*"></RowDefinition>
+                        <RowDefinition Height="5*"></RowDefinition>
                         <RowDefinition Height="1*"></RowDefinition>
-                        <RowDefinition Height="4*"></RowDefinition>
+                        <RowDefinition Height="5*"></RowDefinition>
                     </Grid.RowDefinitions>
 
                     <!-- Top Middle. User Entry Data Definitions -->
@@ -162,12 +147,12 @@
                         <TextBlock Text="Driven Rating:" Margin="5,5,5,5"></TextBlock>
                         <TextBlock Text="Additional Details" Margin="5,5,5,5"></TextBlock>
 
-                        <Button Content="Add User" IsEnabled="true" Command="{Binding AddUserCommand}"/>
+                        <Button Content="Change User" IsEnabled="true" Command="{Binding AddUserCommand}"/>
                     </StackPanel>
 
                     <!-- Top Middle. User Entry Data TextBoxes -->
                     <StackPanel Grid.Column="1" Grid.Row="0"  Margin="10,10,10,10">
-                        <TextBox Text="{Binding userFirstNameFunction}"></TextBox>
+                        <TextBox FontFamily="Comic Sans MS" Text="{Binding userFirstNameFunction}"></TextBox>
                         <TextBox Text="{Binding userLastNameFunction}"></TextBox>
                         <TextBox Text="{Binding userAgeFunction}"></TextBox>
                         <TextBox Text="{Binding userEnjoysSportsRatingFunction}"></TextBox>
@@ -202,19 +187,27 @@
         </TabControl>
  
         <!-- Far right column -->
-        <ListBox Items="{Binding ListOfAllPotentials}" SelectedItem="{Binding referencedPotentialFunction}"  Grid.Column="4" Grid.RowSpan="2" Margin="5, 5, 5, 5">
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{Binding FirstName}"/>
-                        <TextBlock Text="  "/>
-                        <TextBlock Text="{Binding LastName}"/>
-                        <TextBlock Text="      Id: "/>
-                        <TextBlock Text="{Binding Id}"/>
-                    </StackPanel>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+        <StackPanel Grid.Column="1" Grid.RowSpan="2">
+
+            <TextBlock Text="List Of Potentials" Margin="5,5,5,5"></TextBlock>
+
+            <ListBox Items="{Binding Path = ListOfAllPotentials}" SelectedItem="{Binding Path = referencedPotentialFunction}"  
+                     Grid.Column="4" Grid.RowSpan="2" Margin="5, 5, 5, 5">
+                
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding FirstName}"/>
+                            <TextBlock Text="  "/>
+                            <TextBlock Text="{Binding LastName}"/>
+                            <TextBlock Text="      Id: "/>
+                            <TextBlock Text="{Binding Id}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+        
         
     </Grid>
 </Window>
