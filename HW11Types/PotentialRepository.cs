@@ -35,6 +35,16 @@ namespace HW11Types
             dataStore.AddUserStats(u);
         }
 
+        public UserProfileStats GetUserStats()
+        {
+            return dataStore.GetUserStats();
+        }
+
+        public void ChangeUserStats(UserProfileStats u)
+        {
+            dataStore.ChangeUserStats(u);
+        }
+
         public Potential GetASpecificId(int index)
         {
             return dataStore.GetPotentialById(index);
