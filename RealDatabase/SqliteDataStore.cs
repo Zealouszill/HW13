@@ -45,7 +45,15 @@ namespace HW11Database
 
         public UserProfileStats GetUserStats()
         {
-            return context.UserStats.Find((long)1);
+            var tempUserDatabaseStats = context.UserStats.Find((long)1);
+
+            if (tempUserDatabaseStats == null)
+            {
+                tempUserDatabaseStats = new UserProfileStats(
+                "N/A", "N/A", 0, 0, 0, 0, 0, 0, 0, "N/A");
+            }
+
+            return tempUserDatabaseStats;
         }
 
         public void ChangeUserStats(UserProfileStats u)

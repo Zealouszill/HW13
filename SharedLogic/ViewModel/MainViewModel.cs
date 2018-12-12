@@ -50,7 +50,14 @@ namespace SharedLogic.ViewModel
             };
             //var p = dataStore.GetById(2);
             //Console.WriteLine(ListOfAllPotentials[0].FirstName);
-            ListOfAllPotentials = new ObservableCollection<Potential>(this.potentialRepo.GetAllPotentials());
+            try
+            {
+                ListOfAllPotentials = new ObservableCollection<Potential>(this.potentialRepo.GetAllPotentials());
+            } catch (Exception e)
+            {
+
+            }
+            
 
             var temp = potentialRepo.GetUserStats();
                            
