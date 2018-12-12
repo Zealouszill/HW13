@@ -22,9 +22,9 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
+            <RowDefinition Height="5*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
-            <RowDefinition Height="1*"></RowDefinition>
-            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
         </Grid.RowDefinitions>
 
 
@@ -32,9 +32,13 @@
             <Label Text="First Name:" Margin="5,5,5,5"></Label>
             <Label Text="Last Name:" Margin="5,5,5,5"></Label>
             <Label Text="Age:" Margin="5,5,5,5"></Label>
-            <Label Text="Personality Rating:" Margin="5,5,5,5"></Label>
-            <Label Text="Does she enjoy sports?" Margin="5,5,5,5"></Label>
-            <Label Text="Additional Details:" Margin="5,5,5,5"></Label>
+            <Label Text="Enjoy Sports?" Margin="5,5,5,5"></Label>
+            <Label Text="Frugality?" Margin="5,5,5,5"></Label>
+            <Label Text="Physically Active?" Margin="5,5,5,5"></Label>
+            <Label Text="Desire for Kids?" Margin="5,5,5,5"></Label>
+            <Label Text="Sense Of Humor?" Margin="5,5,5,5"></Label>
+            <Label Text="Driven?" Margin="5,5,5,5"></Label>
+            <Label Text="Additional Details" Margin="5,5,5,5"></Label>
             <Button Text="Add Potential" IsEnabled="true" Command="{Binding AddPotentialCommand}"/>
         </StackLayout>
 
@@ -44,48 +48,55 @@
             <Entry Text="{Binding firstNameFunction}"></Entry>
             <Entry Text="{Binding lastNameFunction}"></Entry>
             <Entry Text="{Binding ageFunction}"></Entry>
-            <Entry Text="{Binding personalityRatingFunction}"></Entry>
-            <Picker ItemsSource="{Binding Items}" SelectedItem="{Binding textEnjoysSportsFunction}"/>
-            <!--
-            <RadioButton Margin="0, 5, 0, 4"  IsChecked="{Binding enjoysSportsFunction}"></RadioButton>
-
-            <controls:BindableRadioGroup x:Name="ansPicker"
-                                     Grid.Row="1"
-                                     FontName="AmericanTypewriter"
-                                     SelectedIndex="{Binding ItemSelected}"
-                                     VerticalOptions="Start" />
-            
-            -->
-
+            <Entry Text="{Binding enjoysSportsRatingFunction}"></Entry>
+            <Entry Text="{Binding frugalityRatingFunction}"></Entry>
+            <Entry Text="{Binding physicallyActiveRatingFunction}"></Entry>
+            <Entry Text="{Binding desireForKidsRatingFunction}"></Entry>
+            <Entry Text="{Binding senseOfHumorRatingFunction}"></Entry>
+            <Entry Text="{Binding drivenRatingFunction}"></Entry>
             <Entry Text="{Binding additionalDetailsFunction}"></Entry>
+            
         </StackLayout>
 
         <StackLayout Grid.Column="0" Grid.Row="2" Margin="10,10,10,10">
-            <Label Text="Database Selection:" Margin="5,5,5,5"></Label>
             <Label Text="First Name:" Margin="5,5,5,5"></Label>
             <Label Text="Last Name:" Margin="5,5,5,5"></Label>
             <Label Text="Age:" Margin="5,5,5,5"></Label>
-            <Label Text="Personality Rating:" Margin="5,5,5,5"></Label>
-            <Label Text="Enjoy's Sports:" Margin="5,5,5,5"></Label>
+            <Label Text="Enjoy's Sports Rating:" Margin="5,5,5,5"></Label>
+            <Label Text="Frugality Rating:" Margin="5,5,5,5"></Label>
+            <Label Text="Physically Active Rating:" Margin="5,5,5,5"></Label>
+            <Label Text="Desire for Kids Rating:" Margin="5,5,5,5"></Label>
+            <Label Text="Sense of Humor Rating:" Margin="5,5,5,5"></Label>
+            <Label Text="Driven Rating:" Margin="5,5,5,5"></Label>
             <Label Text="Additional Details" Margin="5,5,5,5"></Label>
-            <Button Text="Get Results" IsEnabled="true" Command="{Binding GetDBResults}"/>
         </StackLayout>
 
         <StackLayout Grid.Column="1" Grid.Row="2" Margin="10,10,10,10">
-            <Entry Text="{Binding idSelectionFunction}" Margin="5,0,5,5"></Entry>
-            <Label Text="{Binding firstNameResultsFunction}" Margin="5,0,5,5"></Label>
-            <Label Text="{Binding lastNameResultsFunction}" Margin="5,5,5,5"></Label>
-            <Label Text="{Binding ageResultsFunction}" Margin="5,5,5,5"></Label>
-            <Label Text="{Binding personalityRatingResultsFunction}" Margin="5,5,5,5"></Label>
-            <Label Text="{Binding enjoysSportsResultsFunction}" Margin="5,5,5,5"></Label>
-            <Label Text="{Binding additionalDetailsResultsFunction}" Margin="5,5,5,5"></Label>
+            <Label Text="{Binding Path = FirstName}" Margin="5,5,5,5"></Label>
+            <Label Text="{Binding Path = LastName}" Margin="5,5,5,5"></Label>
+            <Label Text="{Binding Path = Age}" Margin="5,5,5,5"></Label>
+            <Label Text="{Binding Path = EnjoysSportsRating}" Margin="5,5,5,5"></Label>
+            <Label Text="{Binding Path = FrugalityRating}" Margin="5,5,5,5"></Label>
+            <Label Text="{Binding Path = PhysicallyActiveRating}" Margin="5,5,5,5"></Label>
+            <Label Text="{Binding Path = DesireForKidsRating}" Margin="5,5,5,5"></Label>
+            <Label Text="{Binding Path = SenseOfHumorRating}" Margin="5,5,5,5"></Label>
+            <Label Text="{Binding Path = DrivenRating}" Margin="5,5,5,5"></Label>
+            <Label Text="{Binding Path = AdditionalDetails}" Margin="5,5,5,5"></Label>
         </StackLayout>
 
-        <StackLayout Grid.Column="2" Grid.Row="2">
-            <Label Text="Database ID" Margin="5,5,5,5"></Label>
-            <Entry Text="{Binding removePotentialIDFunction}"></Entry>
-            <Button Text="Remove Potential" IsEnabled="true" Command="{Binding RemovePotentialCommand}"/>
-        </StackLayout>
+        <ListView Grid.Column="2" Grid.Row="2">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Horizontal">
+                        <Entry Text="{Binding FirstName}"/>
+                        <Entry Text="  "/>
+                        <Entry Text="{Binding LastName}"/>
+                        <Entry Text="      Id: "/>
+                        <Entry Text="{Binding Id}"/>
+                    </StackLayout>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
         <ListView>
             

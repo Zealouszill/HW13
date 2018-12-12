@@ -1,8 +1,9 @@
 <Window
-    xmlns:controls="clr-namespace:Avalonia.Controls;assembly=Avalonia.Controls" xmlns="https://github.com/avaloniaui"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:sharedvm="clr-namespace:SharedLogic.ViewModel;assembly=SharedLogic"
-        Title="HW11.Avalonia" SizeToContent="WidthAndHeight">
+    xmlns:controls="clr-namespace:Avalonia.Controls;assembly=Avalonia.Controls" 
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sharedvm="clr-namespace:SharedLogic.ViewModel;assembly=SharedLogic"
+    Title="HW11.Avalonia" SizeToContent="WidthAndHeight">
 
     <Grid Width="1300" Height="750">
 
@@ -150,15 +151,15 @@
                     <!-- Top Middle. User Entry Data TextBoxes -->
                     <StackPanel Grid.Column="1" Grid.Row="0"  Margin="10,10,10,10">
                         <TextBox FontFamily="Comic Sans MS" Text="{Binding userFirstNameFunction}"></TextBox>
-                        <TextBox Text="{Binding userLastNameFunction}"></TextBox>
-                        <TextBox Text="{Binding userAgeFunction}"></TextBox>
-                        <TextBox Text="{Binding userEnjoysSportsRatingFunction}"></TextBox>
-                        <TextBox Text="{Binding userFrugalityRatingFunction}"></TextBox>
-                        <TextBox Text="{Binding userPhysicallyActiveRatingFunction}"></TextBox>
-                        <TextBox Text="{Binding userDesireForKidsRatingFunction}"></TextBox>
-                        <TextBox Text="{Binding userSenseOfHumorRatingFunction}"></TextBox>
-                        <TextBox Text="{Binding userDrivenRatingFunction}"></TextBox>
-                        <TextBox Text="{Binding userAdditionalDetailsFunction}"></TextBox>
+                        <TextBox FontFamily="Comic Sans MS" Text="{Binding userLastNameFunction}"></TextBox>
+                        <TextBox FontFamily="Comic Sans MS" Text="{Binding userAgeFunction}"></TextBox>
+                        <TextBox FontFamily="Comic Sans MS" Text="{Binding userEnjoysSportsRatingFunction}"></TextBox>
+                        <TextBox FontFamily="Comic Sans MS" Text="{Binding userFrugalityRatingFunction}"></TextBox>
+                        <TextBox FontFamily="Comic Sans MS" Text="{Binding userPhysicallyActiveRatingFunction}"></TextBox>
+                        <TextBox FontFamily="Comic Sans MS" Text="{Binding userDesireForKidsRatingFunction}"></TextBox>
+                        <TextBox FontFamily="Comic Sans MS" Text="{Binding userSenseOfHumorRatingFunction}"></TextBox>
+                        <TextBox FontFamily="Comic Sans MS" Text="{Binding userDrivenRatingFunction}"></TextBox>
+                        <TextBox FontFamily="Comic Sans MS" Text="{Binding userAdditionalDetailsFunction}"></TextBox>
                     </StackPanel>
  
                     <!--
