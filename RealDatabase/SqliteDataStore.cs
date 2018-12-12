@@ -45,7 +45,16 @@ namespace HW11Database
 
         public UserProfileStats GetUserStats()
         {
-            var tempUserDatabaseStats = context.UserStats.Find((long)1);
+            UserProfileStats tempUserDatabaseStats;
+            try
+            {
+                tempUserDatabaseStats = context.UserStats.Find((long)1);
+            }
+            catch
+            {
+                tempUserDatabaseStats = new UserProfileStats(
+                "N/A", "N/A", 0, 0, 0, 0, 0, 0, 0, "N/A");
+            }
 
             if (tempUserDatabaseStats == null)
             {
@@ -58,7 +67,6 @@ namespace HW11Database
 
         public void ChangeUserStats(UserProfileStats u)
         {
-            
             context.UserStats.Find((long)1).FirstName = u.FirstName;
             context.UserStats.Find((long)1).LastName = u.LastName;
             context.UserStats.Find((long)1).Age = u.Age;
