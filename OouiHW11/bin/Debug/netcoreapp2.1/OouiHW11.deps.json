@@ -956,14 +956,14 @@
     "Ooui.Forms/0.10.222": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zvmXpL8mUB43KmVYgY4L2cJoa9UWhFD2e8QiXeP/CsHMSAEUMTfMiBADuv/TnWDqRK6K3rtjGo1Z5jFIdgaWiw==",
+      "sha512": "sha512-Dh+9aRlsqJcPeK/9SJhNnpDH0wj1lulVBvRUP1x19J2VVefehtC+4GVrAvfQ5xLldZFaWTA355GWWiVEOLZaLQ==",
       "path": "ooui.forms/0.10.222",
       "hashPath": "ooui.forms.0.10.222.nupkg.sha512"
     },
     "Ooui.Wasm/0.10.222": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-nevkN8NZX4wTvU9OBv8e+9q5o2LUZvXznzSv2STzJhz6oA7yN5Hv4dCz1wynpvV+KQdA5ES/4iN5/Iv6Udy47g==",
+      "sha512": "sha512-zJpjy4kDh8B0Zgiq7qOa0ok7VzGoBfDgUaRScZ8FYjD7viISC/RV5NL5nDCijlN2Ctsv0pOh5pAXFn56Nw/IQQ==",
       "path": "ooui.wasm/0.10.222",
       "hashPath": "ooui.wasm.0.10.222.nupkg.sha512"
     },
@@ -1047,7 +1047,7 @@
     "System.ComponentModel/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-e9Uaz/ejdr6AV3NsjsTRgoCiVL5VjbhgSZ5WcKlhZLAiDFVb5DLpqZXxukvqL7DazlFQXm6yX5WfGmdFoeQ6tg==",
+      "sha512": "sha512-VyGn1jGRZVfxnh8EdvDCi71v3bMXrsu8aYJOwoV7SNDLVhiEqwP86pPMyRGsDsxhXAm2b3o9OIqeETfN5qfezw==",
       "path": "system.componentmodel/4.3.0",
       "hashPath": "system.componentmodel.4.3.0.nupkg.sha512"
     },
@@ -1229,7 +1229,7 @@
     "System.Runtime/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wLlTiM4b/Un90BM6s3voqYybZEGra4WiIaXfTeB9kVPZr6QDP97xjG+rZYzdP2jiuQnij1bA8q4PzmrY6l5QTw==",
+      "sha512": "sha512-JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
       "path": "system.runtime/4.3.0",
       "hashPath": "system.runtime.4.3.0.nupkg.sha512"
     },

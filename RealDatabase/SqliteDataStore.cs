@@ -50,7 +50,7 @@ namespace HW11Database
             {
                 tempUserDatabaseStats = context.UserStats.Find((long)1);
             }
-            catch
+            catch (NullReferenceException)
             {
                 tempUserDatabaseStats = new UserProfileStats(
                 "N/A", "N/A", 0, 0, 0, 0, 0, 0, 0, "N/A");
@@ -67,16 +67,17 @@ namespace HW11Database
 
         public void ChangeUserStats(UserProfileStats u)
         {
-            context.UserStats.Find((long)1).FirstName = u.FirstName;
-            context.UserStats.Find((long)1).LastName = u.LastName;
-            context.UserStats.Find((long)1).Age = u.Age;
-            context.UserStats.Find((long)1).EnjoysSportsRating = u.EnjoysSportsRating;
-            context.UserStats.Find((long)1).FrugalityRating = u.FrugalityRating;
-            context.UserStats.Find((long)1).PhysicallyActiveRating = u.PhysicallyActiveRating;
-            context.UserStats.Find((long)1).DesireForKidsRating = u.DesireForKidsRating;
-            context.UserStats.Find((long)1).SenseOfHumorRating = u.SenseOfHumorRating;
-            context.UserStats.Find((long)1).DrivenRating = u.DrivenRating;
-            context.UserStats.Find((long)1).AdditionalDetails = u.AdditionalDetails;
+            try
+            {
+                
+                ChangeUserStatsValues(u);
+            } catch (NullReferenceException)
+            {
+                context.UserStats.Add(u);
+                //ChangeUserStatsValues(new UserProfileStats(
+                //"N/A", "N/A", 0, 0, 0, 0, 0, 0, 0, "N/A"));
+            }
+            
 
             context.SaveChanges();
         }
@@ -95,6 +96,19 @@ namespace HW11Database
             return "Potential Removed";
         }
 
+        public void ChangeUserStatsValues(UserProfileStats u)
+        {
+            context.UserStats.Find((long)1).FirstName = u.FirstName;
+            context.UserStats.Find((long)1).LastName = u.LastName;
+            context.UserStats.Find((long)1).Age = u.Age;
+            context.UserStats.Find((long)1).EnjoysSportsRating = u.EnjoysSportsRating;
+            context.UserStats.Find((long)1).FrugalityRating = u.FrugalityRating;
+            context.UserStats.Find((long)1).PhysicallyActiveRating = u.PhysicallyActiveRating;
+            context.UserStats.Find((long)1).DesireForKidsRating = u.DesireForKidsRating;
+            context.UserStats.Find((long)1).SenseOfHumorRating = u.SenseOfHumorRating;
+            context.UserStats.Find((long)1).DrivenRating = u.DrivenRating;
+            context.UserStats.Find((long)1).AdditionalDetails = u.AdditionalDetails;
+        }
         
     }
 

@@ -19,10 +19,6 @@ C:\Users\Spencer\source\repos\HW11\HW11Tests\obj\Debug\netcoreapp2.1\HW11Tests.A
 C:\Users\Spencer\source\repos\HW11\HW11Tests\obj\Debug\netcoreapp2.1\HW11Tests.csproj.CopyComplete
 C:\Users\Spencer\source\repos\HW11\HW11Tests\obj\Debug\netcoreapp2.1\HW11Tests.dll
 C:\Users\Spencer\source\repos\HW11\HW11Tests\obj\Debug\netcoreapp2.1\HW11Tests.pdb
-C:\Users\Spencer\source\repos\HW13\HW11Tests\obj\Debug\netcoreapp2.1\HW11Tests.csprojAssemblyReference.cache
-C:\Users\Spencer\source\repos\HW13\HW11Tests\obj\Debug\netcoreapp2.1\HW11Tests.csproj.CoreCompileInputs.cache
-C:\Users\Spencer\source\repos\HW13\HW11Tests\obj\Debug\netcoreapp2.1\HW11Tests.AssemblyInfoInputs.cache
-C:\Users\Spencer\source\repos\HW13\HW11Tests\obj\Debug\netcoreapp2.1\HW11Tests.AssemblyInfo.cs
 C:\Users\Spencer\source\repos\HW13\HW11Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
 C:\Users\Spencer\source\repos\HW13\HW11Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
 C:\Users\Spencer\source\repos\HW13\HW11Tests\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
@@ -37,6 +33,10 @@ C:\Users\Spencer\source\repos\HW13\HW11Tests\bin\Debug\netcoreapp2.1\SharedLogic
 C:\Users\Spencer\source\repos\HW13\HW11Tests\bin\Debug\netcoreapp2.1\HW11Types.pdb
 C:\Users\Spencer\source\repos\HW13\HW11Tests\bin\Debug\netcoreapp2.1\HW11Database.pdb
 C:\Users\Spencer\source\repos\HW13\HW11Tests\bin\Debug\netcoreapp2.1\SharedLogic.pdb
+C:\Users\Spencer\source\repos\HW13\HW11Tests\obj\Debug\netcoreapp2.1\HW11Tests.csprojAssemblyReference.cache
+C:\Users\Spencer\source\repos\HW13\HW11Tests\obj\Debug\netcoreapp2.1\HW11Tests.csproj.CoreCompileInputs.cache
+C:\Users\Spencer\source\repos\HW13\HW11Tests\obj\Debug\netcoreapp2.1\HW11Tests.AssemblyInfoInputs.cache
+C:\Users\Spencer\source\repos\HW13\HW11Tests\obj\Debug\netcoreapp2.1\HW11Tests.AssemblyInfo.cs
 C:\Users\Spencer\source\repos\HW13\HW11Tests\obj\Debug\netcoreapp2.1\HW11Tests.csproj.CopyComplete
 C:\Users\Spencer\source\repos\HW13\HW11Tests\obj\Debug\netcoreapp2.1\HW11Tests.dll
 C:\Users\Spencer\source\repos\HW13\HW11Tests\obj\Debug\netcoreapp2.1\HW11Tests.pdb

@@ -17,8 +17,8 @@
                 <Grid VerticalAlignment="center">
 
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"></ColumnDefinition>
-                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
 
                     <Grid.RowDefinitions>
@@ -28,36 +28,59 @@
                     </Grid.RowDefinitions>
                     
                     <!-- Bottom left corner. Potential Details Display Definitions -->
-                    <StackPanel Margin="40,10,10,10" Grid.Column="0">
+                    <DockPanel Grid.Column="0">
+                        <Border BorderBrush="Gray" BorderThickness="2" Margin="40,10,10,10">
 
-                        <TextBlock Text="First Name:" Margin="5,5,5,5"></TextBlock>
-                        <TextBlock Text="Last Name:" Margin="5,5,5,5"></TextBlock>
-                        <TextBlock Text="Age:" Margin="5,5,5,5"></TextBlock>
-                        <TextBlock Text="Enjoy's Sports Rating:" Margin="5,5,5,5"></TextBlock>
-                        <TextBlock Text="Frugality Rating:" Margin="5,5,5,5"></TextBlock>
-                        <TextBlock Text="Physically Active Rating:" Margin="5,5,5,5"></TextBlock>
-                        <TextBlock Text="Desire for Kids Rating:" Margin="5,5,5,5"></TextBlock>
-                        <TextBlock Text="Sense of Humor Rating:" Margin="5,5,5,5"></TextBlock>
-                        <TextBlock Text="Driven Rating:" Margin="5,5,5,5"></TextBlock>
-                        <TextBlock Text="Additional Details" Margin="5,5,5,5"></TextBlock>
+                            <Grid>
 
-                    </StackPanel>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+
+                                <StackPanel Grid.Column="0">
+
+                                    <TextBlock Text="First Name:" Margin="5,5,5,5"></TextBlock>
+                                    <TextBlock Text="Last Name:" Margin="5,5,5,5"></TextBlock>
+                                    <TextBlock Text="Age:" Margin="5,5,5,5"></TextBlock>
+                                    <TextBlock Text="Enjoy's Sports Rating:" Margin="5,5,5,5"></TextBlock>
+                                    <TextBlock Text="Frugality Rating:" Margin="5,5,5,5"></TextBlock>
+                                    <TextBlock Text="Physically Active Rating:" Margin="5,5,5,5"></TextBlock>
+                                    <TextBlock Text="Desire for Kids Rating:" Margin="5,5,5,5"></TextBlock>
+                                    <TextBlock Text="Sense of Humor Rating:" Margin="5,5,5,5"></TextBlock>
+                                    <TextBlock Text="Driven Rating:" Margin="5,5,5,5"></TextBlock>
+                                    <TextBlock Text="Additional Details" Margin="5,5,5,5"></TextBlock>
+
+                                </StackPanel>
+
+                                <StackPanel DataContext="{Binding referencedPotentialFunction}" Grid.Column="1">
+                                    <TextBlock Text="{Binding Path = FirstName}" Margin="5,5,5,5" MinWidth="200"></TextBlock>
+                                    <TextBlock Text="{Binding Path = LastName}" Margin="5,5,5,5"></TextBlock>
+                                    <TextBlock Text="{Binding Path = Age}" Margin="5,5,5,5"></TextBlock>
+                                    <TextBlock Text="{Binding Path = EnjoysSportsRating}" Margin="5,5,5,5"></TextBlock>
+                                    <TextBlock Text="{Binding Path = FrugalityRating}" Margin="5,5,5,5"></TextBlock>
+                                    <TextBlock Text="{Binding Path = PhysicallyActiveRating}" Margin="5,5,5,5"></TextBlock>
+                                    <TextBlock Text="{Binding Path = DesireForKidsRating}" Margin="5,5,5,5"></TextBlock>
+                                    <TextBlock Text="{Binding Path = SenseOfHumorRating}" Margin="5,5,5,5"></TextBlock>
+                                    <TextBlock Text="{Binding Path = DrivenRating}" Margin="5,5,5,5"></TextBlock>
+                                    <TextBlock Text="{Binding Path = AdditionalDetails}" Margin="5,5,5,5"></TextBlock>
+                                </StackPanel>
+                            </Grid>
+                            
+                        </Border>
+                        
+                    </DockPanel>
+                    
  
  
                     <!-- Bottom left corner. Potential Details Display Values  -->
-                    <StackPanel DataContext="{Binding referencedPotentialFunction}" Margin="10,10,10,10" Grid.Column="1">
-                        <TextBlock Text="{Binding Path = FirstName}" Margin="5,5,5,5"></TextBlock>
-                        <TextBlock Text="{Binding Path = LastName}" Margin="5,5,5,5"></TextBlock>
-                        <TextBlock Text="{Binding Path = Age}" Margin="5,5,5,5"></TextBlock>
-                        <TextBlock Text="{Binding Path = EnjoysSportsRating}" Margin="5,5,5,5"></TextBlock>
-                        <TextBlock Text="{Binding Path = FrugalityRating}" Margin="5,5,5,5"></TextBlock>
-                        <TextBlock Text="{Binding Path = PhysicallyActiveRating}" Margin="5,5,5,5"></TextBlock>
-                        <TextBlock Text="{Binding Path = DesireForKidsRating}" Margin="5,5,5,5"></TextBlock>
-                        <TextBlock Text="{Binding Path = SenseOfHumorRating}" Margin="5,5,5,5"></TextBlock>
-                        <TextBlock Text="{Binding Path = DrivenRating}" Margin="5,5,5,5"></TextBlock>
-                        <TextBlock Text="{Binding Path = AdditionalDetails}" Margin="5,5,5,5"></TextBlock>
-                    </StackPanel>
+                    
 
+                    <StackPanel Orientation="Horizontal" Grid.Column="2">
+                        <TextBlock FontSize="20" Text="Compatibility Percentage:" Margin="5,5,5,5"></TextBlock>
+                        <TextBlock FontSize="20" Text="{Binding compatibilityPercentageFunction}" Margin="5,5,5,5"></TextBlock>
+                    </StackPanel>
+                    
                 </Grid>
                 
             </TabItem>

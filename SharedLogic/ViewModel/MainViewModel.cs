@@ -88,8 +88,34 @@ namespace SharedLogic.ViewModel
         private Potential ReferencedPotential;
         public Potential referencedPotentialFunction
         {
-            get { return ReferencedPotential; }
+            get
+            {
+                try
+                {
+                    compatibilityPercentageFunction = calculateCompatibilityPercentage();
+                }
+                catch
+                {
+
+                }
+                
+                return ReferencedPotential;
+            }
             set { SetField(ref ReferencedPotential, value); }
+        }
+
+        //    EnjoysSportsRating = enjoysSportsRating;
+        //    FrugalityRating = frugalityRating;
+        //    PhysicallyActiveRating = physicallyActiveRating;
+        //    DesireForKidsRating = desireForKidsRating;
+        //    SenseOfHumorRating = senseOfHumorRating;
+        //    DrivenRating = drivenRating;
+
+        private double CompatibilityPercentage;
+        public double compatibilityPercentageFunction
+        {
+            get { return CompatibilityPercentage; }
+            set { SetField(ref CompatibilityPercentage, value); }
         }
 
         /* Display Database Input Values Code block: */
@@ -340,6 +366,34 @@ namespace SharedLogic.ViewModel
             DrivenRating = drivenRating;
             AdditionalDetails = additionalDetails;
          */
+
+        public double calculateCompatibilityPercentage()
+        {
+            double difference =
+                (Math.Abs(ReferencedPotential.EnjoysSportsRating - userEnjoysSportsRatingFunction) +
+                Math.Abs(ReferencedPotential.FrugalityRating - userFrugalityRatingFunction) +
+                Math.Abs(ReferencedPotential.PhysicallyActiveRating - userPhysicallyActiveRatingFunction) +
+                Math.Abs(ReferencedPotential.DesireForKidsRating - userDesireForKidsRatingFunction) +
+                Math.Abs(ReferencedPotential.SenseOfHumorRating - userSenseOfHumorRatingFunction) +
+                Math.Abs(ReferencedPotential.DrivenRating - UserDrivenRating));
+
+            //var answer1 = Math.Abs(ReferencedPotential.EnjoysSportsRating - userEnjoysSportsRatingFunction);
+            //var answer2 = Math.Abs(ReferencedPotential.FrugalityRating - userFrugalityRatingFunction);
+            //var answer3 = Math.Abs(ReferencedPotential.PhysicallyActiveRating - userPhysicallyActiveRatingFunction);
+            //var answer4 = Math.Abs(ReferencedPotential.DesireForKidsRating - userDesireForKidsRatingFunction);
+            //var answer5 = Math.Abs(ReferencedPotential.SenseOfHumorRating - userSenseOfHumorRatingFunction);
+            //var answer6 = Math.Abs(ReferencedPotential.DrivenRating - UserDrivenRating);
+
+            //double totalAnswer = answer1 + answer2 + answer3 + answer4 + answer5 + answer6;
+
+            //totalAnswer = totalAnswer / 54;
+
+            double percentage = Math.Abs(Math.Round((difference / 54) * 100, 2) - 100);
+
+            //percentage = Math.Abs(percentage - 100);
+
+            return percentage;
+        }
 
         public ICommand AddPotentialCommand => addPotentialCommand ?? (addPotentialCommand = new SimpleCommand(
             () =>
