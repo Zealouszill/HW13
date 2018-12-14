@@ -69,15 +69,11 @@ namespace HW11Database
         {
             try
             {
-                
                 ChangeUserStatsValues(u);
             } catch (NullReferenceException)
             {
                 context.UserStats.Add(u);
-                //ChangeUserStatsValues(new UserProfileStats(
-                //"N/A", "N/A", 0, 0, 0, 0, 0, 0, 0, "N/A"));
             }
-            
 
             context.SaveChanges();
         }

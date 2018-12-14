@@ -13,11 +13,11 @@ namespace SharedLogic.ViewModel
     {
 
         public ICommand addPotentialCommand;
-        public ICommand addUserCommand;
+        public ICommand userStatCommand;
         public ICommand resultsCommand;
         public ICommand removePotentialCommand;
 
-        public List<string> Items { get; }
+        
 
 
         private readonly IDataStorage dataStorage;
@@ -29,11 +29,7 @@ namespace SharedLogic.ViewModel
 
             ListOfAllPotentials = new ObservableCollection<Potential>(dataStorage.GetAllPotentials());
 
-            Items = new List<string>()
-            {
-                "Yes",
-                "No"
-            };
+            
 
         }
 
@@ -43,11 +39,6 @@ namespace SharedLogic.ViewModel
 
             this.potentialRepo = potentialRepo;
 
-            Items = new List<string>()
-            {
-                "Yes",
-                "No"
-            };
             //var p = dataStore.GetById(2);
             //Console.WriteLine(ListOfAllPotentials[0].FirstName);
             try
@@ -369,28 +360,14 @@ namespace SharedLogic.ViewModel
 
         public double calculateCompatibilityPercentage()
         {
-            double difference =
-                (Math.Abs(ReferencedPotential.EnjoysSportsRating - userEnjoysSportsRatingFunction) +
+            double difference = (Math.Abs(ReferencedPotential.EnjoysSportsRating - userEnjoysSportsRatingFunction) +
                 Math.Abs(ReferencedPotential.FrugalityRating - userFrugalityRatingFunction) +
                 Math.Abs(ReferencedPotential.PhysicallyActiveRating - userPhysicallyActiveRatingFunction) +
                 Math.Abs(ReferencedPotential.DesireForKidsRating - userDesireForKidsRatingFunction) +
                 Math.Abs(ReferencedPotential.SenseOfHumorRating - userSenseOfHumorRatingFunction) +
                 Math.Abs(ReferencedPotential.DrivenRating - UserDrivenRating));
 
-            //var answer1 = Math.Abs(ReferencedPotential.EnjoysSportsRating - userEnjoysSportsRatingFunction);
-            //var answer2 = Math.Abs(ReferencedPotential.FrugalityRating - userFrugalityRatingFunction);
-            //var answer3 = Math.Abs(ReferencedPotential.PhysicallyActiveRating - userPhysicallyActiveRatingFunction);
-            //var answer4 = Math.Abs(ReferencedPotential.DesireForKidsRating - userDesireForKidsRatingFunction);
-            //var answer5 = Math.Abs(ReferencedPotential.SenseOfHumorRating - userSenseOfHumorRatingFunction);
-            //var answer6 = Math.Abs(ReferencedPotential.DrivenRating - UserDrivenRating);
-
-            //double totalAnswer = answer1 + answer2 + answer3 + answer4 + answer5 + answer6;
-
-            //totalAnswer = totalAnswer / 54;
-
             double percentage = Math.Abs(Math.Round((difference / 54) * 100, 2) - 100);
-
-            //percentage = Math.Abs(percentage - 100);
 
             return percentage;
         }
@@ -423,14 +400,9 @@ namespace SharedLogic.ViewModel
                 //FirstName = null;
             }));
 
-        public ICommand AddUserCommand => addUserCommand ?? (addUserCommand = new SimpleCommand(
+        public ICommand UserStatCommand => userStatCommand ?? (userStatCommand = new SimpleCommand(
             () =>
             {
-                return true;
-            },
-            () =>
-            {
-                //Potential test = new Potential();
 
                 potentialRepo.ChangeUserStats(new UserProfileStats(
                     userFirstNameFunction,
@@ -443,24 +415,25 @@ namespace SharedLogic.ViewModel
                     userSenseOfHumorRatingFunction,
                     userDrivenRatingFunction,
                     userAdditionalDetailsFunction));
-
-                //potentialRepo.AddUserProfile(new UserProfileStats(
-                //    userFirstNameFunction,
-                //    userLastNameFunction,
-                //    userAgeFunction,
-                //    userEnjoysSportsRatingFunction,
-                //    userFrugalityRatingFunction,
-                //    userPhysicallyActiveRatingFunction,
-                //    userDesireForKidsRatingFunction,
-                //    userSenseOfHumorRatingFunction,
-                //    userDrivenRatingFunction,
-                //    userAdditionalDetailsFunction));
-
-                //Potentials.Clear();
-                //foreach (var c in potentialRepo.GetAllPotentials())
-                //    Potentials.Add(c);
-                //FirstName = null;
+                
             }));
+
+        //potentialRepo.AddUserProfile(new UserProfileStats(
+        //    userFirstNameFunction,
+        //    userLastNameFunction,
+        //    userAgeFunction,
+        //    userEnjoysSportsRatingFunction,
+        //    userFrugalityRatingFunction,
+        //    userPhysicallyActiveRatingFunction,
+        //    userDesireForKidsRatingFunction,
+        //    userSenseOfHumorRatingFunction,
+        //    userDrivenRatingFunction,
+        //    userAdditionalDetailsFunction));
+
+        //Potentials.Clear();
+        //foreach (var c in potentialRepo.GetAllPotentials())
+        //    Potentials.Add(c);
+        //FirstName = null;
 
         /*  
             FirstName = firstName;

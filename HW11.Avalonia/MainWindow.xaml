@@ -168,7 +168,7 @@
                         <TextBlock Text="Driven Rating:" Margin="5,5,5,5"></TextBlock>
                         <TextBlock Text="Additional Details" Margin="5,5,5,5"></TextBlock>
 
-                        <Button Content="Change User" IsEnabled="true" Command="{Binding AddUserCommand}"/>
+                        <Button Content="Change User" IsEnabled="true" Command="{Binding UserStatCommand}"/>
                     </StackPanel>
  
                     <!-- Top Middle. User Entry Data TextBoxes -->
@@ -200,6 +200,7 @@
  
          <!-- Far right column -->
 
+        
         <StackPanel Grid.Column="1" Grid.RowSpan="2">
 
             <TextBlock Text="List Of Potentials" Margin="5,5,5,5"></TextBlock>
